@@ -1,0 +1,102 @@
+.input-1 {
+    width: 100vw;
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 600px; /* Maintain a minimum height for larger screens */
+    background-color: rgba(128, 128, 128, 0.186);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Image/Banner.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.input-1 h1 {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 45px; /* Use responsive font size */
+    text-align: center;
+}
+
+.input-1 p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.input-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.input-3 input {
+    width: 80%; /* Use percentage to make the input responsive */
+    max-width: 500px; /* Ensure the input doesn't get too large */
+    height: 55px;
+    outline: none;
+    border: 1px solid white; /* Use consistent border styles */
+    background-color: white;
+    color: black;
+    border-radius: 5px 0 0 5px;
+    padding-left: 20px;
+    margin-bottom: 20px; /* Add spacing below input */
+}
+
+.input-3 button {
+    width: 60%; /* Make button responsive */
+    max-width: 200px; /* Limit button size on larger screens */
+    height: 55px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #1C88B8;
+    color: white;
+    border: none; /* Remove border to make the design cleaner */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (portrait orientation) */
+@media (max-width: 768px) {
+    .input-1 h1 {
+        font-size: 6vw; /* Larger font size for tablets */
+    }
+
+    .input-1 p {
+        font-size: 3vw; /* Adjust paragraph size for tablets */
+    }
+
+    .input-3 input {
+        width: 90%; /* Increase input width for tablets */
+    }
+
+    .input-3 button {
+        width: 70%; /* Increase button width for tablets */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .input-1 {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .input-1 h1 {
+        font-size: 8vw; /* Larger font size for mobile */
+    }
+
+    .input-1 p {
+        font-size: 4vw; /* Adjust paragraph size for mobile */
+    }
+
+    .input-3 input {
+        width: 95%; /* Almost full width on mobile */
+    }
+
+    .input-3 button {
+        width: 80%; /* Wider button for mobile */
+    }
+}

@@ -1,0 +1,98 @@
+.carousel-container {
+  width: 100vw;
+  margin: 0;
+  overflow: hidden; /* To avoid overflow issues */
+  margin-top: 45px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  height: auto; /* Allow auto height */
+  width: 100%;
+  max-width: 150px; /* Constrain max width */
+  aspect-ratio: 1/1; /* Make sure card is a perfect circle */
+  border-radius: 50%;
+  border: none;
+  margin: 0 auto; /* Center cards */
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 175px; /* Keep max width for large screens */
+  height: auto; /* Allow height to adjust automatically */
+}
+
+.carosal2-h2 {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 1.5rem; /* Use responsive font size */
+}
+
+.car-2-hr {
+  width: 100vw;
+  height: 1px;
+  background-color: black;
+}
+
+.car-one-img {
+  width: 100vw;
+  height: auto; /* Allow height to adjust automatically */
+  max-height: 350px; /* Constrain the height for larger screens */
+}
+
+.car-four-image {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Enable wrapping to handle smaller screens */
+}
+
+.car-four-image img {
+  width: 100%;
+  max-width: 325px; /* Constrain the image size */
+  height: auto; /* Allow height to adjust based on width */
+  border-radius: 25px;
+  margin: 45px 10px 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (portrait orientation) */
+@media (max-width: 768px) {
+  .card {
+      max-width: 120px; /* Smaller cards for tablets */
+  }
+
+  .car-one-img {
+      max-height: 250px; /* Adjust the height of the main image */
+  }
+
+  .car-four-image img {
+      max-width: 250px; /* Smaller images for tablet view */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .carousel-container {
+      margin-top: 20px; /* Reduce top margin for smaller screens */
+  }
+
+  .card {
+      max-width: 100px; /* Further reduce card size for mobile */
+  }
+
+  .car-one-img {
+      max-height: 200px; /* Reduce image height */
+  }
+
+  .car-four-image img {
+      max-width: 150px; /* Smaller images on mobile */
+      margin: 20px 5px; /* Reduce margin for images */
+  }
+}

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.modal-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+}
+.modal-2{
+    position: fixed;
+top: 60%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color: white;
+width: 1000px;
+height: 600px;
+display: flex;
+
+}
+.modal-4{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    /* margin: 40px; */
+}
+.modal-4 span{
+    color: #1C88B8;
+    margin: 20px;
+}
+.modal-4 h2{
+    margin: 20px;
+}
+.modal-4 p{
+    margin: 20px;
+}
+.modal-4 strike{
+    margin: 20px;
+}
+.modal-3 img{
+    width: 450px;
+    height: 400px;
+    object-fit: contain;
+}
+.modal-4 button{
+    width: 350px;
+    height: 55px;
+    color: black;
+    background-color:  #1C88B8;
+    border-color: #1C88B8;
+    color: white;
+    font-size: 20px;
+    margin: 25px;
+}
+.btn-1{
+    color: white;
+}

@@ -1,0 +1,37 @@
+.carosal4-img {
+    width: 100vw; /* Keep full width */
+    height: auto; /* Let height adjust based on the image aspect ratio */
+    max-height: 400px; /* Maintain max-height for larger screens */
+    object-fit: cover; /* Ensure the image covers the space while maintaining aspect ratio */
+}
+
+.carosal4-1 {
+    margin-top: 50px;
+    padding: 0 20px; /* Add padding for better spacing on smaller screens */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (portrait orientation) */
+@media (max-width: 768px) {
+    .carosal4-img {
+        max-height: 300px; /* Adjust image height for tablets */
+    }
+
+    .carosal4-1 {
+        margin-top: 40px; /* Reduce top margin on smaller screens */
+        padding: 0 15px; /* Adjust padding */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .carosal4-img {
+        max-height: 200px; /* Further reduce image height for mobile */
+    }
+
+    .carosal4-1 {
+        margin-top: 30px; /* Reduce top margin further for mobile */
+        padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+}

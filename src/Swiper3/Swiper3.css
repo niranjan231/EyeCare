@@ -1,0 +1,55 @@
+.carousel-container {
+    width: 100vw;
+    margin: 0;
+    overflow: hidden; /* To avoid overflow issues */
+    margin-top: 45px;
+    margin-top: 100px;
+  }
+  
+  .card {
+    background: #fff;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
+    padding: 20px;
+    text-align: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: none;
+  }
+  
+  .slick-slide {
+    padding: 10px;
+  }
+  .card img{
+    width: 165px;
+    height: 165px;
+    /* border-radius: 50%; */
+  }
+  .carosal2-h2{
+    text-align: center;
+    margin-top: 45px;
+  }
+  .car-2-hr{
+    width: 100vw;
+    height: 0.5px;
+    background-color: black;
+  }
+  .car-one-img{
+    width: 100vw;
+    height: 350px;
+  }
+  .car-four-image{
+    display: flex;
+    justify-content: space-between;
+  }
+  .car-four-image img{
+    width: 325px;
+    height: 500px;
+    border-radius: 25px;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  

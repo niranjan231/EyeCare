@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.modal2-1{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.11);
+    z-index: 10000;
+}
+.modal2-2{
+
+    left: 70%;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    z-index: 15000;
+    position: fixed;
+}
+.modal2-3{
+    width: 100vw;
+    height: 55px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    /* align-items: center; */
+    box-shadow: 0px 1px 5px rgb(231, 224, 224);
+    /* justify-content: space-evenly; */
+    /* font-size: 22px;
+    color: #1C88B8; */
+    
+}
+.modal2-4{
+    color: #1C88B8;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+    /* margin-right: 100px; */
+}
+.modal2-cart{
+    color: #1C88B8;
+    font-size: 35px;
+    font-weight: 800;   
+}
+.modal2-5{
+    margin-left: 15px;
+}
+.modal2-6 {
+    /* color: #1C88B8; */
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #1C88B8;
+    color: white;
+    margin-left: 250px;
+    text-align: center;
+    
+}
+.modal2-7{
+    font-size: 15px;
+    cursor: pointer;
+}
+.modal2-9{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+    .modal2-8 button {  
+        border: none;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal2-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 95px;
+    background-color: rgba(128, 128, 128, 0.148);
+    /* text-align: center; */
+    border-radius: 30px;
+    justify-content: center;
+    gap: 5px;
+}
+.modal2-8 button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    /* background-color: rgba(128, 128, 128, 0.148); */
+}
+    
+.modal2-8 span{
+    width: 20px;
+    height: 20px;
+    /* background-color: rgba(128, 128, 128, 0.148); */
+}
+.modal2-10{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(128, 128, 128, 0.089);
+    text-align: center;
+}
+.modal2-10 img{
+    width: 50px;
+    height: 50px;
+}
+.modal2-11{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.modal2-11 h6{
+    font-weight: 700;
+}
+.modal2-11 span{
+    font-size: 14px;
+    color: #1C88B8;
+    font-weight: 800;
+}
+.modal2-11 p{
+    font-size: 15px;
+    color: gray;
+}
+.modal2-12 p{
+color: #1C88B8;
+font-weight: 700;
+margin-right: 5px;
+font-size: 25px;
+cursor: pointer;
+}
+.modal2-12 p:hover{
+    color: red;
+}
