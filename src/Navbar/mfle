@@ -1,28 +1,23 @@
-import "./Navbar.css"
+import "./Navbar.css";
 import { IoBagAdd } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { FaCartPlus } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-import Modal2 from "./Modal2"
-import Logo from '../Image/logo.webp'
+import Modal2 from "./Modal2";
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
-import { loginUser,registerUser } from "../features/user/authSlice";
-import logo from "../Image/logo.png";
 import Swal from 'sweetalert2';
 import { useDispatch } from "react-redux";
+// import logo from "../image/logo.png";
+import { loginUser,registerUser } from "../features/user/authSlice";
 
-
-
-const Navbar=()=>{  
-   
+const Navbar = () => {
     const dispatch = useDispatch();
     const [filteredContacts, setFilteredContacts] = useState([]);
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const swalOptions = {
-        title: `<img src"${logo}" alt="logo" style="margin: 20px; height: 50px;width:100px;" />`,
+        title: `<img src"" alt="logo" style="margin: 20px; height: 50px;width:100px;" />`,
         html: `
             <style>
                 .swal2-popup {
@@ -177,35 +172,27 @@ const Navbar=()=>{
         // }
     };
 
-    // ////////
-    const [showModal , setShowModal] = useState(false)
-
+    const [showModal, setShowModal] = useState(false);
     const { loginWithRedirect } = useAuth0();
-    const handleFlashSale=()=>{
-        navigate("flashsale")
-    }
-   
-const handleCartModalClose=()=>{
-    setShowModal(false);
-}
-    const handleCartModal=()=>{
+    const handleCartModalClose = () => {
+        setShowModal(false);
+    };
+    const handleCartModal = () => {
         setShowModal(true);
-    }
-    const navigate = useNavigate();
-    const handleGoLogoFromHome=()=>{
-navigate("home")
-    }
-    const handleContect=()=>{
-        navigate("contect")
-    }
-    return (    
+    };
+    const handleGoLogoFromHome = () => {
+        navigate("home");
+    };
+    const handleContect = () => {
+        navigate("contect");
+    };
+
+    return (
         <>
         <div className="nav">
-            <img onClick={handleGoLogoFromHome} className="nav-img" src={Logo}></img>
-            
-            <div className="navMenuContainerList">
-
-                <div className="NavMenuList">   
+            <img onClick={handleGoLogoFromHome} className="nav-img" src="http://localhost:3003/_next/image?url=%2Fimg%2Flogo.png&w=1920&q=75"></img>
+            <ul>
+                <div className="NavMenuList">
          
          <div className="hoverList">      <li>Eyeglasses</li>
 
@@ -240,16 +227,15 @@ navigate("home")
                 <li>Sunglasses</li>
                 <li>Screen Glasses</li>
                 <li onClick={handleContect}>Contact</li>
-                <li onClick={handleFlashSale}>Flash Sale</li>
-                </div>  
-            
+                <li>Flash Sale</li>
+            </ul>
             <span className="nav-span"><CiSearch /></span>
             <button className="nav-btn" onClick={handleButtonClick}>Join</button>
             <span onClick={handleCartModal} className="nav-cart"><FaCartPlus /></span>
             <div className="notifaction">{0}</div>
         </div>
         {
-showModal && <Modal2 handleCartModalClose={handleCartModalClose} />
+          showModal && <Modal2 handleCartModalClose={handleCartModalClose} />
         }
 
         </>
