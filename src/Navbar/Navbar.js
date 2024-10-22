@@ -5,17 +5,21 @@ import { FaCartPlus } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import Modal2 from "./Modal2"
+import Logo from '../Image/logo.webp'
 import { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 
 // const navigate = useNavigate()
 
 
-const Navbar=()=>{
+const Navbar=()=>{  
    
     const [showModal , setShowModal] = useState(false)
 
     const { loginWithRedirect } = useAuth0();
+    const handleFlashSale=()=>{
+        navigate("flashsale")
+    }
    
 const handleCartModalClose=()=>{
     setShowModal(false);
@@ -30,12 +34,14 @@ navigate("home")
     const handleContect=()=>{
         navigate("contect")
     }
-    return (
+    return (    
         <>
         <div className="nav">
-            <img onClick={handleGoLogoFromHome} className="nav-img" src="http://localhost:3003/_next/image?url=%2Fimg%2Flogo.png&w=1920&q=75"></img>
-            <ul>
-                <div className="NavMenuList">
+            <img onClick={handleGoLogoFromHome} className="nav-img" src={Logo}></img>
+            
+            <div className="navMenuContainerList">
+
+                <div className="NavMenuList">   
          
          <div className="hoverList">      <li>Eyeglasses</li>
 
@@ -70,8 +76,9 @@ navigate("home")
                 <li>Sunglasses</li>
                 <li>Screen Glasses</li>
                 <li onClick={handleContect}>Contact</li>
-                <li>Flash Sale</li>
-            </ul>
+                <li onClick={handleFlashSale}>Flash Sale</li>
+                </div>  
+            
             <span className="nav-span"><CiSearch /></span>
             <button className="nav-btn">Join</button>
             <span onClick={handleCartModal} className="nav-cart"><FaCartPlus /></span>

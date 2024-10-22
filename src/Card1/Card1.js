@@ -1,15 +1,60 @@
-import { useState } from 'react';
+import react,  { useEffect, useState } from 'react';  
 import './Card1.css';
 import { FaShoppingCart } from "react-icons/fa";
 import Modal from "./Modal"
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useSelector,useDispatch} from 'react-redux';
 import  {handleAddToCart}  from '../features/cartSlice';
+import axios from 'axios';
 
 
 
 
 const Card1=()=>{
+const [data1 , setData1] =  useState([]);
+useEffect(()=>{
+axios.get("http://eye-care.developmentalphawizz.com/api/v1/products/latest")
+.then(res=>{
+  console.log(res.data)
+  setData1(res.data)
+})
+.catch(err=>{
+  console.log(err)
+})
+},[])
+console.log(data1)
+
+
+// const Card1 = () => {
+//   const [data1, setData1] = useState([]);
+
+//   useEffect(() => {
+//     const source = axios.CancelToken.source(); // For canceling API requests if component unmounts
+
+//     axios.get("http://eye-care.developmentalphawizz.com/api/v1/products/latest", {
+//       cancelToken: source.token,
+//     })
+//     .then((res) => {
+//       console.log(res.data);
+//       setData1(res.data);
+//     })
+//     .catch((err) => {
+//       if (axios.isCancel(err)) {
+//         console.log('Request canceled', err.message);
+//       } else {
+//         console.error('Error fetching data:', err);
+//       }
+//     });
+
+//     return () => {
+//       source.cancel('Component unmounted, request canceled');
+//     };
+//   }, []);
+
+  console.log(data1);
+
+
+
   const dispatch = useDispatch();
   const getItem = useSelector((state)=>state.allCart.items)
   // console.log(item)

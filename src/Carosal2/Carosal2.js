@@ -31,7 +31,7 @@ const Carosal2 = () => {
 
   return (
     <>
-    <div className="car-2-hr"><h2 className="carosal2-h2">WEAR THE TREND</h2></div>
+    <div className="underLine"><h2 className="carosal2-h2">WEAR THE TREND</h2></div>
     <div className="carousel-container">
       <Slider {...settings}>
         {cards.map((card, index) => (
@@ -41,7 +41,7 @@ const Carosal2 = () => {
     </div>
     <img className="car-one-img" src="https://static1.lenskart.com/media/desktop/img/harmony/28-jun-24/Web%20Banner%201920x520.jpg"></img>
 
-    <div className="car-2-hr"><h3 className="carosal2-h2">Our CategoryD</h3></div>
+    <div className="underLine"><h3 className="carosal2-h2">Our CategoryD</h3></div>
     <div className="car-four-image">
         <img src="http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMenWear.927b47f0.png&w=1920&q=75"></img>
         <img src="http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FWomanWear.789f52c5.png&w=1920&q=75"></img>

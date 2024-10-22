@@ -2,7 +2,7 @@
   width: 100vw;
   margin: 0;
   overflow: hidden; /* To avoid overflow issues */
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .card {
@@ -48,16 +48,20 @@
 
 .car-four-image {
   display: flex;
-  justify-content: space-between;
+  margin-top: 50px;
+  justify-content: space-evenly;
   flex-wrap: wrap; /* Enable wrapping to handle smaller screens */
 }
-
+.underLine {
+  border-top: 1px solid #d6d6d6;
+  margin-top: 50px;
+}
 .car-four-image img {
   width: 100%;
-  max-width: 325px; /* Constrain the image size */
+  max-width: 280px; /* Constrain the image size */
   height: auto; /* Allow height to adjust based on width */
   border-radius: 25px;
-  margin: 45px 10px 0;
+ 
 }
 
 /* Media Queries for Responsiveness */

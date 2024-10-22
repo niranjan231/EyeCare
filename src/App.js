@@ -15,18 +15,25 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 import { useState } from 'react';
 import Contect from './Contect/Contect';
+import FlashSale from './FlashSale/FlashSale';
+import Demo from './Demo';
 
 function App() {
  
+  
 
   return (
     <>
     <Navbar/>
+    
+   
     <Routes>
+      <Route path='/flashsale' element={ <FlashSale/>}/>
       <Route path='/' element={<MainLogo/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/contect' element={<Contect/>}/>
     </Routes>
+    <Demo></Demo>
     </>
   );
 }
