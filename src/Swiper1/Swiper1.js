@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import Card from "./Card"; // Import your Card component
 import Swiper1Card1 from "./Swiper1Card1";
+import "../Responsive.css"
+
 
 const Swiper1 = () => {
   const settings = {

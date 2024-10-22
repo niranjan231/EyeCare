@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Contect.css';  // Import the CSS file
 import contactImg from '../Image/contactimg.svg' 
+import "../Responsive.css"
+
 
 const Contect = () => {
   const [formData, setFormData] = useState({

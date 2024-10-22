@@ -1,4 +1,5 @@
 import "./Carosal4.css";
+import "../Responsive.css"
 
 
 

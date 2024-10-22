@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Modal2.css";
 import { IoCartOutline } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
+import "../Responsive.css"
 
 
 

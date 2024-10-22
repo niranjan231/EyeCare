@@ -3,6 +3,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import flashVanner1 from '../Image/flesVanner1.webp'
 import flashimage2 from '../Image/flashimage2.png'
+import "../Responsive.css"
 
 
 
@@ -12,6 +13,9 @@ import flashimage2 from '../Image/flashimage2.png'
 const FlashSale=()=>{
     const navigate = useNavigate()
 
+    const handleFlashSeleOffer=()=>{
+        navigate("/offer")
+    }
     const handleBackFromFlash=()=>{
         navigate("/home")
     }
@@ -26,7 +30,7 @@ const FlashSale=()=>{
 
 <div className="flashCard">
     <div className="flashCardImg">
-        <img src={flashVanner1}></img>
+        <img onClick={handleFlashSeleOffer} src={flashVanner1}></img>
     </div>
     <div className="flashCardHead">
         <div className="flashCardTitle">

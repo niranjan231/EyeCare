@@ -3,6 +3,10 @@ import Slider from "react-slick";
 import "./Swiper3.css"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import "../Responsive.css"
+
+
+
 // import Card from "./Card"; // Import your Card component
 import Swiper1Card1 from "./Swiper1Card1";
 

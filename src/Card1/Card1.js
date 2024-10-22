@@ -6,6 +6,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { useSelector,useDispatch} from 'react-redux';
 import  {handleAddToCart}  from '../features/cartSlice';
 import axios from 'axios';
+import "../Responsive.css"
 
 
 
@@ -25,31 +26,7 @@ axios.get("http://eye-care.developmentalphawizz.com/api/v1/products/latest")
 console.log(data1)
 
 
-// const Card1 = () => {
-//   const [data1, setData1] = useState([]);
 
-//   useEffect(() => {
-//     const source = axios.CancelToken.source(); // For canceling API requests if component unmounts
-
-//     axios.get("http://eye-care.developmentalphawizz.com/api/v1/products/latest", {
-//       cancelToken: source.token,
-//     })
-//     .then((res) => {
-//       console.log(res.data);
-//       setData1(res.data);
-//     })
-//     .catch((err) => {
-//       if (axios.isCancel(err)) {
-//         console.log('Request canceled', err.message);
-//       } else {
-//         console.error('Error fetching data:', err);
-//       }
-//     });
-
-//     return () => {
-//       source.cancel('Component unmounted, request canceled');
-//     };
-//   }, []);
 
   console.log(data1);
 
@@ -146,7 +123,10 @@ const handleOpenDropdown2=()=>{
         {/* {console.log(id)} */}
       <img onClick={handleModal} src={data.image}></img>
       <span>Round Black Silver Sunglass</span>
-      <div className='card1-4'><strike>RS:232</strike><button onClick={()=>dispatch(handleAddToCart(data))}><FaShoppingCart /></button></div>
+      <div className='card1-4'><strike>RS:232</strike>
+      <button onClick={()=>dispatch(handleAddToCart(data))}><FaShoppingCart /></button>
+      {/* <button><button className='card-add-1'>+</button><span>1</span><button className='card-add-2'>-</button></button> */}
+      </div>
     </div>
     })
   }

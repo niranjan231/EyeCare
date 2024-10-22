@@ -1,5 +1,6 @@
 import "./Carosal1.css";
 
+import "../Responsive.css"
 
 
 

@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import Modal2 from "./Modal2"
 import Logo from '../Image/logo.webp'
+import "../Responsive.css"
+
 import { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 

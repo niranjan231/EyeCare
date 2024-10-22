@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1200px) {
+    .card1-6 button {
+        /* margin-left: 1022px; */
+        margin-bottom: 38px;
+        background-color: #1C88B8;
+        border: none;
+        color: white;
+        border-radius: 20px;
+        width: 150px;
+        height: 45px;
+        margin-left: 220px;
+    }
+}

@@ -1,5 +1,6 @@
 import "./InputBox.css"
 import { CiSearch } from "react-icons/ci";
+import "../Responsive.css"
 
 
 

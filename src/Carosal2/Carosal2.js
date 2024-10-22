@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import Card from "./Card"; // Import your Card component
 import Card from "./Card"
+import "../Responsive.css"
+
 
 const Carosal2 = () => {
   const settings = {

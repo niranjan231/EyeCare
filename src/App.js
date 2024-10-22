@@ -17,6 +17,7 @@ import { useState } from 'react';
 import Contect from './Contect/Contect';
 import FlashSale from './FlashSale/FlashSale';
 import Demo from './Demo';
+import Offer from './Offer/Offer';
 
 function App() {
  
@@ -32,6 +33,7 @@ function App() {
       <Route path='/' element={<MainLogo/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/contect' element={<Contect/>}/>
+      <Route path='/offer' element={<Offer/>}/>
     </Routes>
     {/* <Demo></Demo> */}
     </>
