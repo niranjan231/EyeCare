@@ -2,7 +2,7 @@ import "./FlashSale.css";
 import { IoHomeOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import flashVanner1 from '../Image/flesVanner1.webp'
-
+import flashimage2 from '../Image/flashimage2.png'
 
 
 
@@ -30,19 +30,67 @@ const FlashSale=()=>{
     </div>
     <div className="flashCardHead">
         <div className="flashCardTitle">
-            Demo Title
+        Limited-Time Offer: Act Fast! 🔥
+        </div>
+        <div className="flashSubTitle">
+        Limited Discount  : <span>19-oct-2024 to 30-oct-2024</span>
         </div>
         <div className="flashSubTitle">
         Offer Till : <span>22-oct-2024</span>
         </div>
         <div className="flashSubTitle">
-        Offer Till : <span>22-oct-2024</span>
+        Campaign status : <span>On Going</span>
         </div>
         <div className="flashSubTitle">
-        Offer Till : <span>22-oct-2024</span>
+      Deals rate : <span>50</span>
+        </div>
+    </div>    
+</div>
+
+<div className="flashCard">
+    <div className="flashCardImg">
+        <img src={flashimage2}></img>
+    </div>
+    <div className="flashCardHead">
+        <div className="flashCardTitle">
+    Limited Discount 
         </div>
         <div className="flashSubTitle">
-        Offer Till : <span>22-oct-2024</span>
+        Offer Till : <span>22-oct-2024 to 29-oct-2034</span>
+        </div>
+        <div className="flashSubTitle">
+        Campaign status :
+ : <span>On Going</span>
+        </div>
+        <div className="flashSubTitle">
+        Campaign type on : <span>Fixed rate</span>
+        </div>
+        <div className="flashSubTitle">
+        Deels rate : <span>10</span>
+        </div>
+    </div>    
+</div>
+
+<div className="flashCard">
+    <div className="flashCardImg">
+        <img src={flashimage2}></img>
+    </div>
+    <div className="flashCardHead">
+        <div className="flashCardTitle">
+    Limited Discount 
+        </div>
+        <div className="flashSubTitle">
+        Offer Till : <span>22-oct-2024 to 29-oct-2034</span>
+        </div>
+        <div className="flashSubTitle">
+        Campaign status :
+ : <span>On Going</span>
+        </div>
+        <div className="flashSubTitle">
+        Campaign type on : <span>Fixed rate</span>
+        </div>
+        <div className="flashSubTitle">
+        Deels rate : <span>10</span>
         </div>
     </div>    
 </div>

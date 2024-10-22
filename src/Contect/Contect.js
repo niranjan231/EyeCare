@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contect.css';  // Import the CSS file
+import contactImg from '../Image/contactimg.svg' 
 
 const Contect = () => {
   const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ const Contect = () => {
   return (
     <div className='form'>
 <div className='form-1'>
-<img src='http://localhost:3003/_next/static/media/contact-illustration.2f6adc05.svg'></img>
+<img src={contactImg}></img>
 <h6>My Adress</h6>
 <p>Vidya Nagar New Delhi</p>
 <h6>Contact</h6>

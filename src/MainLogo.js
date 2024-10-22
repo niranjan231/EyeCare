@@ -19,7 +19,7 @@ function MainLogo() {
 <InputBox/>
 <Swiper1/>
 <Swiper2/>
-{/* <Card1 /> */}
+<Card1 />
 <Carosal1/>
     </>
   );
