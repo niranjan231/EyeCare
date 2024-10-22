@@ -29,7 +29,7 @@ const handleCartModalClose=()=>{
     }
     const navigate = useNavigate();
     const handleGoLogoFromHome=()=>{
-navigate("home")
+navigate("/")
     }
     const handleContect=()=>{
         navigate("contect")
