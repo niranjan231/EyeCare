@@ -17,6 +17,8 @@ import { useState } from 'react';
 import Contect from './Contect/Contect';
 import FlashSale from './FlashSale/FlashSale';
 import Demo from './Demo';
+import Allcategory from './page/Allcategory';
+import Allproduct from './page/Allproduct';
 
 function App() {
  
@@ -32,6 +34,8 @@ function App() {
       <Route path='/' element={<MainLogo/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/contect' element={<Contect/>}/>
+      <Route path='/allcategory' element={<Allcategory/>}/>
+      <Route path='/allproduct' element={<Allproduct/>}/>
     </Routes>
     <Demo></Demo>
     </>

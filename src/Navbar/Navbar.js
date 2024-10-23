@@ -2,7 +2,7 @@ import "./Navbar.css"
 import { IoBagAdd } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { FaCartPlus } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import Modal2 from "./Modal2"
 import Logo from '../Image/logo.webp'
@@ -12,7 +12,6 @@ import { loginUser,registerUser } from "../features/user/authSlice";
 import logo from "../Image/logo.png";
 import Swal from 'sweetalert2';
 import { useDispatch } from "react-redux";
-
 
 
 const Navbar=()=>{  
@@ -241,6 +240,8 @@ navigate("home")
                 <li>Screen Glasses</li>
                 <li onClick={handleContect}>Contact</li>
                 <li onClick={handleFlashSale}>Flash Sale</li>
+                <Link to={"/allcategory"}><li>Allcategory</li></Link>
+                <Link to={"/allproduct"}><li>AllProduct</li></Link>
                 </div>  
             
             <span className="nav-span"><CiSearch /></span>
@@ -249,7 +250,7 @@ navigate("home")
             <div className="notifaction">{0}</div>
         </div>
         {
-showModal && <Modal2 handleCartModalClose={handleCartModalClose} />
+         showModal && <Modal2 handleCartModalClose={handleCartModalClose} />
         }
 
         </>
