@@ -5,6 +5,7 @@ import Swiper1 from './Swiper1/Swiper1';
 import Swiper2 from './Swiper2/Swiper2';
 import Carosal3 from './Carosal3/Carosal3';
 import Carosal4 from './Carosal4/Carosal4';
+import Footer from './Footer/Footer';
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
     <Carosal3/>
     <Carosal4/>
     <Swiper2/>
+    {/* <Footer/> */}
     </>
   );
 }

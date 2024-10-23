@@ -8,6 +8,7 @@ import Swiper2 from './Swiper2/Swiper2';
 import Home from './Home';
 import InputBox from  "./InputBox/InputBox"
 import Card1 from "./Card1/Card1"
+import Footer from './Footer/Footer';
 // import SwiperBrand from './Navbar/SwiperBrand/SwiperBrand';
 
 function MainLogo() {
@@ -20,7 +21,8 @@ function MainLogo() {
 <Swiper1/>
 <Swiper2/>
 <Card1 />
-<Carosal1/>
+{/* <Carosal1/> */}
+{/* <Footer/> */}
     </>
   );
 }

@@ -18,7 +18,7 @@ import Contect from './Contect/Contect';
 import FlashSale from './FlashSale/FlashSale';
 import Demo from './Demo';
 import Offer from './Offer/Offer';
-
+import Footer from './Footer/Footer';
 function App() {
  
   
@@ -35,7 +35,9 @@ function App() {
       <Route path='/contect' element={<Contect/>}/>
       <Route path='/offer' element={<Offer/>}/>
     </Routes>
-    {/* <Demo></Demo> */}
+    <div className='footer-gap'>
+    <Footer/>
+    </div>
     </>
   );
 }
