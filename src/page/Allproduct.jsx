@@ -7,63 +7,14 @@ import { useSelector,useDispatch} from 'react-redux';
 import  {handleAddToCart}  from '../features/cartSlice';
 import axios from 'axios';
 import { fetchProduct } from '../features/Product/productSlice';
+import { AddCart } from '../features/AddCart/cartSlice';
 
 function Allproduct() {
-    // const [data1 , setData1] =  useState([]);
-    // useEffect(()=>{
-    // axios.get("http://eye-care.developmentalphawizz.com/api/v1/products/latest")
-    // .then(res=>{
-    //   console.log(res.data)
-    //   setData1(res.data)
-    // })
-    // .catch(err=>{
-    //   console.log(err)
-    // })
-    // },[])
-    // console.log(data1)
-    
-
       const dispatch = useDispatch();
-    //   const getItem = useSelector((state)=>state.allCart.items)
-    //   // console.log(item)
 
-    //   const [show , setShow] = useState(false);
-    //   const [show1 , setShow1] = useState(false)
-    //   const [show2 , setShow2] = useState(true)
-    //   const [show3 , setShow3] = useState(true)
-    //   const [show4 , setShow4] = useState(true)
-    
-    
-    // const handleOpenDropdown5=()=>{
-    //   setShow4(false)
-    // }
-    // const handleOpenDropdown6=()=>{
-    //   setShow4(true)
-    // }
-    // const handleOpenDropdown4=()=>{
-    //   setShow3(true)
-    // }
-    // const handleOpenDropdown3=()=>{
-    //   setShow3(false)
-    // }
-    // const handleOpenDropdown=()=>{
-    // setShow2(false)
-    // }
-    
-    // const handleOpenDropdown2=()=>{
-    //   setShow2(true)
-    // }
-    //   const handleLoadMoreBtnCard1=()=>{
-    //     setShow(true)
-    //   }
-    
       const handleModal=()=>{
         setShow1(true)
       }
-    
-    //   const handleBackModal=()=>{
-    //     setShow1(false)
-    //   }
      
       const { Allproduct } = useSelector((state) => state.product);
       console.log(Allproduct);
@@ -73,9 +24,16 @@ function Allproduct() {
         dispatch(fetchProduct());
      }, [dispatch]);
   
+
+
+     const addCard =(data)=>{
+     console.log("hello",data);
+     dispatch(AddCart(data))
+     }
+
         return (
           <>
- <div className='card1-5'>
+    <div className='card1-5'>
         {Allproduct && Allproduct && Allproduct.products && Allproduct.products.length > 0 ? (
           Allproduct.products.map((data) => (
              <div key={data.id} data={data}  className='card1-3'>
@@ -83,7 +41,7 @@ function Allproduct() {
                 src={`https://eye-care.developmentalphawizz.com/storage/app/public/product/thumbnail/${data.thumbnail}`} // Directly integrated URL
                 alt={data.name} ></img>
             <span>Round Black Silver Sunglass</span>
-            <div className='card1-4'><strike>RS:232</strike><button onClick={()=>dispatch(handleAddToCart(data))}><FaShoppingCart /></button></div>
+            <div className='card1-4'><strike>RS:232</strike><button onClick={(()=>addCard(data.id))}><FaShoppingCart /></button></div>
           </div>
           ))
         ) : (
