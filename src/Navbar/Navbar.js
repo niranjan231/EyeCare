@@ -7,6 +7,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Modal2 from "./Modal2"
 import Logo from '../Image/logo.webp'
 import "../Responsive.css"
+import { FaQuestionCircle } from "react-icons/fa";
+
 
 import { useState } from "react";
 // import { useNavigate } from "react-router-dom";
@@ -19,17 +21,20 @@ const Navbar=()=>{
     const [showModal , setShowModal] = useState(false)
 
     const { loginWithRedirect } = useAuth0();
+    const navigate = useNavigate();
     const handleFlashSale=()=>{
         navigate("flashsale")
     }
-   
+   const openProfile=()=>{
+    navigate("profile")
+   }
 const handleCartModalClose=()=>{
     setShowModal(false);
 }
     const handleCartModal=()=>{
         setShowModal(true);
     }
-    const navigate = useNavigate();
+   
     const handleGoLogoFromHome=()=>{
 navigate("/")
     }
@@ -76,10 +81,10 @@ navigate("/")
                 
                 
                 <li>Sunglasses</li>
-                <li>Screen Glasses</li>
                 <li onClick={handleContect}>Contact</li>
                 <li onClick={handleFlashSale}>Flash Sale</li>
                 </div>  
+                <li onClick={openProfile} className="nav-ques"><FaQuestionCircle /></li>
             
             <span className="nav-span"><CiSearch /></span>
             <button className="nav-btn">Join</button>

@@ -19,6 +19,7 @@ import FlashSale from './FlashSale/FlashSale';
 import Demo from './Demo';
 import Offer from './Offer/Offer';
 import Footer from './Footer/Footer';
+import Profile from './Profile/Profile';
 function App() {
  
   
@@ -26,14 +27,13 @@ function App() {
   return (
     <>
     <Navbar/>
-    
-   
     <Routes>
       <Route path='/flashsale' element={ <FlashSale/>}/>
       <Route path='/' element={<MainLogo/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/contect' element={<Contect/>}/>
       <Route path='/offer' element={<Offer/>}/>
+      <Route path='/profile' element={<Profile/>}/>
     </Routes>
     <div className='footer-gap'>
     <Footer/>

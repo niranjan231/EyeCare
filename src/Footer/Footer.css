@@ -43,15 +43,18 @@
   .footer-1 a {
     color: #fff; /* Link color */
     text-decoration: none; /* No underline */
-    font-size: 16px; /* Link font size */
+    font-size: 18px; /* Link font size */
     margin-bottom: 10px; /* Space below links */
     display: block; /* Make links block-level for spacing */
+    font-weight: 700;
   }
   
   .footer-1 span {
     display: block; /* Each span on a new line */
-    font-size: 14px; /* Smaller font size for span elements */
+    font-size: 10px; /* Smaller font size for span elements */
     margin-top: 5px; /* Space above spans */
+    color: white;
+    font-weight: 700;
   }
   
   /* Subscribe Section */

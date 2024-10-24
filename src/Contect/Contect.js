@@ -31,7 +31,7 @@ const Contect = () => {
   };
 
   return (
-    <div className='form'>
+    <div className='form-11'>
 <div className='form-1'>
 <img src={contactImg}></img>
 <h6>My Adress</h6>
