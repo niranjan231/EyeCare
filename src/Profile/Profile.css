@@ -1,145 +1,181 @@
-/* Profile Page Layout */
+/* Profile.css */
+
+/* Base styles for the profile page */
 .profile-page {
-    display: flex;           /* Flexbox layout */
-    flex-direction: row;      /* Ensure row layout (side by side) */
-    height: 100vh;    
-    gap: 15px;        /* Full height viewport */
-  }
-  
-  /* Sidebar */
-  .sidebar {
-    width: 350px;
+    display: flex;
+    flex-direction: row;
     padding: 20px;
-    background-color: #2c3e50;
-    color: white;
-    display: flex;           /* Sidebar layout as flexbox */
-    flex-direction: column;  /* Keep content in a column inside sidebar */
-    justify-content: flex-start;
-    height: 100vh;           /* Full height for the sidebar */
-    position: sticky;        /* Keep the sidebar in a fixed position when scrolling */
-    top: 0;
-  }
-  .profile-4{
-    font-size: 22px;
-    font-weight: 400;
-  }
-  .sidebar h3 {
-    text-align: center;
-    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
   }
   
-  .sidebar ul {
+  /* Sidebar section styles */
+  .sidebar {
+    flex: 1;
+    max-width: 200px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar .profile-3 {
     list-style-type: none;
     padding: 0;
-    margin: 0;
   }
   
-  .sidebar ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  .sidebar .profile-4 {
+    margin: 10px 0;
     cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
   }
   
-  .sidebar ul li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  .sidebar .profile-4:hover {
+    background-color: #444;
   }
   
-  /* Form Container */
+  /* Form container styles */
   .form-container {
-    flex-grow: 1;            /* Take up the remaining width */
+    flex: 3;
     padding: 20px;
-    background-color: #f4f4f4;
-    overflow-y: auto;        /* Allow the form section to scroll if content overflows */
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Form Styles */
   .form {
     display: flex;
     flex-direction: column;
   }
   
-  /* Header */
   .header {
-    text-align: center;
+    font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
   }
   
-  /* Form Group */
   .formGroup {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
-  /* Label */
   .label {
-    display: block;
-    margin-bottom: 8px;
     font-size: 16px;
-    font-weight: bold;
+    margin-bottom: 8px;
     color: #333;
   }
   
-  /* Input */
-  .input, .textarea {
+  .input,
+  .textarea {
     width: 100%;
     padding: 10px;
-    font-size: 14px;
-    border-radius: 5px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
   }
   
-  /* File input */
   .inputFile {
-    font-size: 14px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
+    display: block;
+    margin-top: 10px;
   }
   
-  /* Textarea */
-  .textarea {
-    resize: vertical;
-  }
-  
-  /* Error text */
   .errorText {
     color: red;
     font-size: 12px;
     margin-top: 5px;
   }
   
-  /* Image preview */
   .imagePreview {
     margin-top: 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    object-fit: cover;
-    border: 1px solid #ddd;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 10px;
   }
   
-  /* Submit button */
   .submitButton {
-    padding: 12px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #007bff;
     color: white;
-    background-color: #4CAF50;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .profile-3{
-    margin-left: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    transition: background-color 0.3s;
   }
   
   .submitButton:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 1024px) {
+    .profile-page {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .sidebar {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .form-container {
+      margin-left: 0;
+    }
+  
+    .submitButton {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      font-size: 20px;
+    }
+  
+    .label {
+      font-size: 14px;
+    }
+  
+    .input,
+    .textarea {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .submitButton {
+      font-size: 13px;
+      padding: 8px 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sidebar {
+      padding: 15px;
+    }
+  
+    .header {
+      font-size: 18px;
+    }
+  
+    .input,
+    .textarea {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .submitButton {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
   }
   

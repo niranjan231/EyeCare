@@ -48,15 +48,14 @@
 
 .car-four-image {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  gap: 10px; /* Add gap for consistent spacing */
+  gap: 5px; /* Add gap for consistent spacing */
 }
 
 .car-four-image img {
   width: 100%;
-  max-width: 325px; /* Limit max width */
-  height: auto; /* Allow height to adjust */
+  max-width: 285px;  height: auto; /* Allow height to adjust */
   border-radius: 25px;
   margin-top: 45px;
 }

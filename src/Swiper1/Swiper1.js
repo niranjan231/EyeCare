@@ -1,25 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import "./Swiper1.css"
+import "./Swiper1.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-// import Card from "./Card"; // Import your Card component
 import Swiper1Card1 from "./Swiper1Card1";
-import "../Responsive.css"
-
+import "../Responsive.css";
 
 const Swiper1 = () => {
+  const [slidesToShow, setSlidesToShow] = useState(6);
+
+  useEffect(() => {
+    const updateSlidesToShow = () => {
+      const width = window.innerWidth;
+      if (width >= 1200) {
+        setSlidesToShow(5); // Large screens
+      } else if (width >= 992) {
+        setSlidesToShow(4); // Medium screens
+      } else if (width >= 768) {
+        setSlidesToShow(3); // Tablets
+      } else if (width >= 576) {
+        setSlidesToShow(2); // Small devices
+      } else {
+        setSlidesToShow(1); // Mobile screens
+      }
+    };
+
+    // Initial check
+    updateSlidesToShow();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", updateSlidesToShow);
+
+    // Clean up event listener on component unmount
+    return () => window.removeEventListener("resize", updateSlidesToShow);
+  }, []);
+
   const settings = {
-    dots: true,          // Show dots at the bottom
-    infinite: true,      // Infinite scrolling
-    speed: 500,          // Animation speed
-    slidesToShow: 6,     // Show 6 cards at a time
-    slidesToScroll: 1,   // Scroll 1 card at a time
-    autoplay: true,      // Enable autoplay
-    autoplaySpeed: 2000, // Autoplay speed in ms
+    dots: true,          
+    infinite: true,      
+    speed: 500,          
+    slidesToShow,        // Dynamically set slidesToShow
+    slidesToScroll: 1,   
+    autoplay: true,      
+    autoplaySpeed: 2000, 
   };
 
-  // Sample data for the cards
   const cards = [
     { title: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-matte-black-full-rim-square-lenskart-blu-lb-e13526-c1_vincent-chase-vc-e13526-c1-eyeglasses_g_8388_28july23.jpg", description: "This is the first card" },
     { title: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-full-rim-round-lenskart-blu-lb-e14790-c2_csvfile-1653639951597-g_4030.jpg", description: "This is the second card" },
@@ -31,17 +56,18 @@ const Swiper1 = () => {
     { title: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-computer-glasses:-blue-full-rim-round-lenskart-blu-lb-e16220-c1_csvfile-1704900202876-g_8962.jpg", description: "This is the eighth card" },
   ];
 
-
   return (
     <>
-    <div className="unserLine"><h4 className="carosal2-h2">WEAR THE TREND</h4></div>
-    <div className="carousel-container">
-      <Slider {...settings}>
-        {cards.map((card, index) => (
-          <Swiper1Card1 key={index} title={<img src={card.title}></img>} description={card.description} />
-        ))}
-      </Slider>
-    </div>
+      <div className="unserLine">
+        <h4 className="carosal2-h2">WEAR THE TREND</h4>
+      </div>
+      <div className="carousel-container">
+        <Slider {...settings}>
+          {cards.map((card, index) => (
+            <Swiper1Card1 key={index} title={<img src={card.title} alt="Glasses" />} description={card.description} />
+          ))}
+        </Slider>
+      </div>
     </>
   );
 };

@@ -28,9 +28,9 @@ function App() {
     <>
     <Navbar/>
     <Routes>
+    <Route path="/" element={<Home/>}/>
       <Route path='/flashsale' element={ <FlashSale/>}/>
-      <Route path='/' element={<MainLogo/>}/>
-      <Route path='/home' element={<Home/>}/>
+      <Route path='mainlogo' element={<MainLogo/>}/>
       <Route path='/contect' element={<Contect/>}/>
       <Route path='/offer' element={<Offer/>}/>
       <Route path='/profile' element={<Profile/>}/>
@@ -38,6 +38,8 @@ function App() {
     <div className='footer-gap'>
     <Footer/>
     </div>
+
+    
     </>
   );
 }

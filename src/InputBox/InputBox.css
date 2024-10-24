@@ -31,6 +31,7 @@
     justify-content: center;
     margin-top: 10px;
     width: 100%;
+    gap: 5px;
 }
 
 .input-3 input {
@@ -55,6 +56,9 @@
     background-color: #1C88B8;
     color: white;
     border: none; /* Remove border to make the design cleaner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Media Queries for Responsiveness */

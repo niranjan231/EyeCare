@@ -36,7 +36,7 @@ const handleCartModalClose=()=>{
     }
    
     const handleGoLogoFromHome=()=>{
-navigate("/")
+navigate("mainlogo")
     }
     const handleContect=()=>{
         navigate("contect")
@@ -72,6 +72,7 @@ navigate("/")
                         <a href="https://www.google.com">Rounded Glasses</a>
                         <a href="https://www.google.com">Computer Glasses</a>
                         </div>  
+                        
                     </div>
                     </div>
                     
@@ -86,7 +87,7 @@ navigate("/")
                 </div>  
                 <li onClick={openProfile} className="nav-ques"><FaQuestionCircle /></li>
             
-            <span className="nav-span"><CiSearch /></span>
+            <span className="nav-serch"><CiSearch /></span>
             <button className="nav-btn">Join</button>
             <span onClick={handleCartModal} className="nav-cart"><FaCartPlus /></span>
             <div className="notifaction">{0}</div>
@@ -94,6 +95,9 @@ navigate("/")
         {
 showModal && <Modal2 handleCartModalClose={handleCartModalClose} />
         }
+
+
+        
 
         </>
     )

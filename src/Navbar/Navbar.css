@@ -1,244 +1,170 @@
-/* Base styles for all screen sizes */
+/* Base Styles */
 .nav {
-    width: 100vw;
-    height: 83.5px;
-    background-color: white;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.185);
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    z-index: 10000;
-    padding: 0 20px;
-}
-
-.nav-img {
-    height: 40px;
-    margin-left: 20px;
+    z-index: 1000;
+  }
+  
+  .nav img {
+    width: 140px;
     cursor: pointer;
-}
-
-ul {
+  }
+  
+  .navMenuContainerList {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.nav-cart {
-    color: #1C88B8;
-    margin-left: 20px;
-    /* font-size: 25px; */
-    cursor: pointer;
-}
-
-.nav-btn {
-    width: 65px;
-    height: 40px;
-    background-color: #1C88B8;
-    border-radius: 10px;
-    border: none;
-    margin-left: 20px;
-    color: white;
-    cursor: pointer;
-}
-.nav {
-    justify-content: space-between;
-}
-li {
-    list-style: none;
+    align-items: center;
+    gap:  40px;
     font-size: 18px;
     cursor: pointer;
-}
-.navMenuContainerList {
+  }
+  
+  .NavMenuList {
     display: flex;
-    gap: 46px;
-}
-.notifaction {
-    width: 23px;
-    height: 23px;
-    background-color: #1C88B8;
-    color: white;
-    border-radius: 50%;
-    position: absolute;
-    right: 33px;
-    bottom: 42px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid #fff;
-    font-size: 14px;
-    align-items: center;
-} 
-  .nav {
-    justify-content: space-between;
-    padding: 0 40px;
-}   
-
-.drop-1 {
-    width: 300px;
-    height: 400px;
-    background-color: rgba(165, 42, 42, 0.276);
-}
-
-.notifaction {
-    width: 23px;
-    height: 23px;
-    background-color: #1C88B8;
-    color: white;
-    border-radius: 50%; 
-    text-align: center;
-    /* position: relative; */
-    margin-left: -10px;
-    border: 1px solid #fff;
-    font-size: 12px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
-
-/* HOVER COPONENT SECTION START FROM HERE */
-.hoverComponent{
-    display: none;  
-    position: absolute;
-    /* margin-top: 38px; */
-    margin-top: auto;
-    transition: .3s ease;
-    margin-left: 45px;  
-}
-.hoverContent a:hover{
-    color: #000000;
-}
-.hoverContent a {
-    text-decoration: none;
-    margin: 4px 0;
-    color: #000000;
-    font-size: 15px;
-    transition: .3s ease;
-}
-.hoverContent{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    display: flex;
-    padding: 30px 20px;
-    border-radius: 20px;
-    background-color: #eee3e3;
-    display: flex;
-    margin-top: 40px;
-    min-width: 600px;   
-    justify-content: space-around;
-}   
-.hoverNavList{  
-    display: flex;
-    flex-direction: column; 
-}
-
-.NavMenuList li{
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .NavMenuList li {
     cursor: pointer;
-}
-.hoverList:hover .hoverComponent{
+    position: relative;
+  }
+  
+  .hoverList:hover .hoverComponent {
+    display: block;
+  }
+  
+  .hoverComponent {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .nav-ques, .nav-span, .nav-btn, .nav-cart {
+    margin-left: 10px;
+  }
+  
+  .nav-cart {
+    position: relative;
+    font-size: 25px;
+    color:  #1C88B8;
+    cursor: pointer;
+    /* padding-right: 10px; */
+  }
+  .nav-btn{
+    width: auto;
+    background-color: #1C88B8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 85px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .nav-serch{
+    width: 30px;
+    height: 30px;
+    border: 0.8px solid gray;
+    /* background-color: gray; */
+    /* text-align: center; */
     display: flex;
-
-
-}
-/* HOVER COPONENT SECTION END FROM HERE */
-/* Mobile Styles (up to 600px wide) */
-@media screen and (max-width: 600px) {
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav-ques{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .notifaction {
+    position: absolute;
+    top: 9px;
+    right: 4px;
+    background-color:  #1C88B8;
+    border-radius: 50%;
+    color: white;
+    padding: 2px 7px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navMenuContainerList {
+      display: none; /* Hide menu on small screens */
+    }
+    
     .nav {
-        height: 60px;
-        padding: 0 10px;
+      justify-content: space-between;
     }
-
+  
     .nav-img {
-        height: 30px;
-        margin-left: 10px;
+      width: 120px; /* Smaller logo on mobile */
     }
-
-    ul {
-        flex-direction: column;
-        align-items: center;
+    
+    .nav-btn {
+      display: none; /* Hide Join button */
     }
-
-    li {
-        margin-left: 10px;
-        font-size: 14px;
-    }
-
+  
     .nav-cart {
-        margin-left: 10px;
-        font-size: 30px !important;
+      margin-left: auto;
     }
-
-    .nav-btn {
-        width: 55px;
-        height: 35px;
-        margin-left: 10px;
+  
+    /* Add a hamburger menu for mobile */
+    .hamburger {
+      display: block;
+      cursor: pointer;
     }
-
-    .nav-span {
-        width: 30px;
-        height: 30px;
-        margin-left: 10px;
-        font-size: 20px;
+  
+    /* Add dropdown menu for mobile */
+    .dropdown-menu {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
     }
-
-    .notifaction {
-        width: 20px;
-        height: 25px;
+  
+    .dropdown-menu li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
     }
-}
-
-/* Tablet Styles (600px to 900px wide) */
-@media screen and (min-width: 600px) and (max-width: 900px) {
-    .nav {
-        height: 70px;
+  
+    .dropdown-menu.show {
+      display: flex;
     }
-
+  }
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .navMenuContainerList {
+      gap: 10px;
+    }
+  
     .nav-img {
-        height: 35px;
+      width: 130px;
     }
+  }
 
-    li {
-        margin-left: 20px;
-        font-size: 16px;
-    }
 
-    .nav-btn {
-        width: 60px;
-        height: 38px;
-    }
 
-    .nav-span {
-        width: 32px;
-        height: 32px;
-        font-size: 22px;
-    }
-}
 
-/* Large Screen Styles (900px and up) */
-@media screen and (min-width: 900px) {
-    .nav {
-        height: 83.5px;
-    }
 
-    .nav-img {
-        height: 40px;
-    }
 
-    .nav-cart {
-        margin-left: 45px;
-        font-size: 25px;
-    }
 
-    .nav-btn {
-        width: 65px;
-        height: 40px;
-    }
 
-    .nav-span {
-        width: 35px;
-        height: 35px;
-        font-size: 25px;
-    }
-}
-.nav-cart {
-    margin-left: 30px;
-    font-size: 30px !important;
-}   
+
+  
+  
