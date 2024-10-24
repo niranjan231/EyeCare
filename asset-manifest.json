@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/EyeCare/static/css/main.32a7179c.css",
-    "main.js": "/EyeCare/static/js/main.3ef2a311.js",
+    "main.css": "/EyeCare/static/css/main.36288539.css",
+    "main.js": "/EyeCare/static/js/main.f46dc7e3.js",
     "static/js/453.92362f1a.chunk.js": "/EyeCare/static/js/453.92362f1a.chunk.js",
     "static/media/Banner.webp": "/EyeCare/static/media/Banner.c9ac7c8185f2522871a5.webp",
     "static/media/flesVanner1.webp": "/EyeCare/static/media/flesVanner1.8008b3dad772e99f056b.webp",
-    "static/media/contactimg.svg": "/EyeCare/static/media/contactimg.d03e6026d8e2aacf97c45d6a67c24857.svg",
+    "static/media/contactimg.svg": "/EyeCare/static/media/contactimg.e6b676b3c88e209a2b58781606da58e3.svg",
     "static/media/flashimage2.png": "/EyeCare/static/media/flashimage2.c6af6b95cbb64337c45d.png",
     "static/media/logo.svg": "/EyeCare/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/slick.svg": "/EyeCare/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -14,12 +14,12 @@
     "static/media/logo.webp": "/EyeCare/static/media/logo.c7ea97924a284c83f13b.webp",
     "static/media/slick.woff": "/EyeCare/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/EyeCare/index.html",
-    "main.32a7179c.css.map": "/EyeCare/static/css/main.32a7179c.css.map",
-    "main.3ef2a311.js.map": "/EyeCare/static/js/main.3ef2a311.js.map",
+    "main.36288539.css.map": "/EyeCare/static/css/main.36288539.css.map",
+    "main.f46dc7e3.js.map": "/EyeCare/static/js/main.f46dc7e3.js.map",
     "453.92362f1a.chunk.js.map": "/EyeCare/static/js/453.92362f1a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32a7179c.css",
-    "static/js/main.3ef2a311.js"
+    "static/css/main.36288539.css",
+    "static/js/main.f46dc7e3.js"
   ]
 }
