@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-    {/* <Navbar/>
+    <Navbar/>
     <Routes>
     <Route path="/" element={<Home/>}/>
       <Route path='/flashsale' element={ <FlashSale/>}/>
@@ -37,8 +37,7 @@ function App() {
     </Routes>
     <div className='footer-gap'>
     <Footer/>
-    </div> */}
-    <Swiper2/>
+    </div>
 
     
     </>
