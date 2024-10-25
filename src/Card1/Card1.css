@@ -142,8 +142,12 @@
     flex-wrap: wrap;
 
 }
+.card1-6{
+    display: flex;
+    justify-content: end;
+}
 .card1-6 button{
-   margin-left: 1022px;
+   /* margin-left: 1022px; */
     margin-bottom: 38px;
     background-color: #1C88B8;
     border: none;

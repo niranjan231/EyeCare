@@ -9,57 +9,57 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
-  
-  .nav img {
+}
+
+.nav img {
     width: 140px;
     cursor: pointer;
-  }
-  
-  .navMenuContainerList {
+}
+
+.navMenuContainerList {
     display: flex;
     align-items: center;
-    gap:  40px;
-    font-size: 18px;
+    gap: 40px;
+    font-size: 15px;
     cursor: pointer;
-  }
-  
-  .NavMenuList {
+}
+
+.NavMenuList {
     display: flex;
     list-style: none;
     gap: 20px;
-  }
-  
-  .NavMenuList li {
+}
+
+.NavMenuList li {
     cursor: pointer;
     position: relative;
-  }
-  
-  .hoverList:hover .hoverComponent {
+}
+
+.hoverList:hover .hoverComponent {
     display: block;
-  }
-  
-  .hoverComponent {
+}
+
+.hoverComponent {
     display: none;
     position: absolute;
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     z-index: 1000;
-  }
-  
-  .nav-ques, .nav-span, .nav-btn, .nav-cart {
+}
+
+.nav-ques, .nav-span, .nav-btn, .nav-cart {
     margin-left: 10px;
-  }
-  
-  .nav-cart {
+}
+
+.nav-cart {
     position: relative;
     font-size: 25px;
-    color:  #1C88B8;
+    color: #1C88B8;
     cursor: pointer;
-    /* padding-right: 10px; */
-  }
-  .nav-btn{
+}
+
+.nav-btn {
     width: auto;
     background-color: #1C88B8;
     color: white;
@@ -68,103 +68,116 @@
     width: 85px;
     height: 35px;
     cursor: pointer;
-  }
-  .nav-serch{
+}
+
+.nav-serch {
     width: 30px;
     height: 30px;
     border: 0.8px solid gray;
-    /* background-color: gray; */
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
-  }
-  .nav-ques{
+}
+
+.nav-ques {
     font-size: 25px;
     cursor: pointer;
-  }
-  .notifaction {
+}
+
+.notifaction {
     position: absolute;
     top: 9px;
     right: 4px;
-    background-color:  #1C88B8;
+    background-color: #1C88B8;
     border-radius: 50%;
     color: white;
     padding: 2px 7px;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .navMenuContainerList {
-      display: none; /* Hide menu on small screens */
+}
+
+
+
+
+
+/* home */
+.nav-res{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+    position: relative;
+}
+.nav-res-1 span{
+    font-size: 25px;
+    color: #1C88B8;
+}
+.nav-res-4 span{
+color: #1C88B8;
+font-size: 25px;
+}
+.nav-res-2 span{
+    color: #1C88B8;
+    font-size: 25px;
+
+}
+.nav-res-3 span{
+    color: #1C88B8;
+    font-size: 25px;
+}
+.nav-res-6{
+    width: 30px;
+    height: 30px;
+    background-color: #1C88B8;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    position: absolute;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .nav-res{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
-    
-    .nav {
-      justify-content: space-between;
+    .nav-serch{
+        display: none;
     }
-  
-    .nav-img {
-      width: 120px; /* Smaller logo on mobile */
+    .nav-btn{
+        display:none;
     }
-    
-    .nav-btn {
-      display: none; /* Hide Join button */
-    }
-  
     .nav-cart {
-      margin-left: auto;
+        display: none;
     }
-  
-    /* Add a hamburger menu for mobile */
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
-  
-    /* Add dropdown menu for mobile */
-    .dropdown-menu {
-      display: none;
-      flex-direction: column;
-      background-color: white;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      width: 200px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-    }
-  
-    .dropdown-menu li {
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-    }
-  
-    .dropdown-menu.show {
-      display: flex;
-    }
-  }
-  
-  /* Tablet */
-  @media (max-width: 1024px) {
-    .navMenuContainerList {
-      gap: 10px;
-    }
-  
-    .nav-img {
-      width: 130px;
-    }
-  }
-
-
-
-
-
-
-
-
-
-  
-  
+    
+.nav-ques {
+    display: none;
+}
+.notifaction{
+    display: none;
+}
+.navMenuContainerList {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+}

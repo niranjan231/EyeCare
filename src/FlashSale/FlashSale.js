@@ -17,7 +17,7 @@ const FlashSale=()=>{
         navigate("/offer")
     }
     const handleBackFromFlash=()=>{
-        navigate("/home")
+        navigate("/")
     }
     return (
         <div className="flash">

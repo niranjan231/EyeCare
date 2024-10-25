@@ -23,8 +23,8 @@
 }
 
 .card img {
-  width: 100%;
-  max-width: 165px; /* Restrict max width of the image */
+  width: 150%;
+  max-width: 200px; /* Restrict max width of the image */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -48,14 +48,15 @@
 
 .car-four-image {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  gap: 5px; /* Add gap for consistent spacing */
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 10px;
 }
 
 .car-four-image img {
   width: 100%;
-  max-width: 285px;  height: auto; /* Allow height to adjust */
+  max-width: 325px; 
+  height: auto;
   border-radius: 25px;
   margin-top: 45px;
 }
@@ -69,7 +70,9 @@
   }
 
   .card img {
-      max-width: 120px; /* Adjust image size for tablets */
+    width: 200%;
+    max-width: 165px; /* Restrict max width of the image */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .carosal2-h2 {
@@ -96,7 +99,9 @@
   }
 
   .card img {
-      max-width: 100px; /* Adjust image size for mobile */
+    width: 150%;
+    max-width: 165px; /* Restrict max width of the image */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .carosal2-h2 {

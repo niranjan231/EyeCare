@@ -6,8 +6,12 @@ import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import Modal2 from "./Modal2"
 import Logo from '../Image/logo.webp'
-import "../Responsive.css"
+// import "../Responsive.css"
 import { FaQuestionCircle } from "react-icons/fa";
+import { IoHome } from "react-icons/io5";
+import { FaUser } from "react-icons/fa";
+// import { CiSearch } from "react-icons/ci";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 import { useState } from "react";
@@ -92,6 +96,26 @@ navigate("mainlogo")
             <span onClick={handleCartModal} className="nav-cart"><FaCartPlus /></span>
             <div className="notifaction">{0}</div>
         </div>
+
+{/* for responsive degines */}
+<div className="nav-res">
+<div className="nav-res-1">
+    <span><IoHome /></span>
+</div>
+<div className="nav-res-2">
+    <span onClick={openProfile}><FaUser /></span>
+</div>
+<div className="nav-res-3">
+    <span><CiSearch /></span>
+</div>
+<div className="nav-res-4">
+<div className="nav-res-6">45</div>
+    <span onClick={handleCartModal}><FaShoppingCart /></span>
+</div>
+</div>
+
+
+
         {
 showModal && <Modal2 handleCartModalClose={handleCartModalClose} />
         }

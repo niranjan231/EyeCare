@@ -36,11 +36,15 @@ const Swiper2 = () => {
   const settings = {
     dots: true,          // Show dots at the bottom
     infinite: true,      // Infinite scrolling
-    speed: 500,          // Animation speed
+    speed: 400,          // Animation speed
     slidesToShow: slidesToShow, // Dynamic based on screen size
     slidesToScroll: 1,   // Scroll 1 card at a time
     autoplay: true,      // Enable autoplay
-    autoplaySpeed: 2000, // Autoplay speed in ms
+    autoplaySpeed: 1000, // Autoplay speed in ms
+    swipeToSlide: true,  // Allows users to swipe directly to a slide
+    draggable: true,     // Allows dragging slides on desktop
+    swipe: true,         // Enables swipe on touch devices
+    touchThreshold: 100  // Controls sensitivity to swipe (adjust as needed)
   };
 
   // Sample data for the cards
