@@ -114,19 +114,25 @@
 .nav-res-1 span{
     font-size: 25px;
     color: #1C88B8;
+    cursor: pointer;
 }
 .nav-res-4 span{
 color: #1C88B8;
 font-size: 25px;
+cursor: pointer;
+
 }
 .nav-res-2 span{
     color: #1C88B8;
     font-size: 25px;
+    cursor: pointer;
 
 }
 .nav-res-3 span{
     color: #1C88B8;
     font-size: 25px;
+    cursor: pointer;
+
 }
 .nav-res-6{
     width: 30px;
@@ -156,6 +162,7 @@ font-size: 25px;
         width: 100%;
         display: flex;
         justify-content: space-around;
+        z-index: 1000px;
     }
     .nav-serch{
         display: none;

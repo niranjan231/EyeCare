@@ -1,7 +1,5 @@
 .input-1 {
-    width: 100vw;
-    height: auto; /* Allow height to adjust based on content */
-    min-height: 600px; /* Maintain a minimum height for larger screens */
+    height: 500px;
     background-color: rgba(128, 128, 128, 0.186);
     display: flex;
     flex-direction: column;
@@ -11,7 +9,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px; /* Add padding for better spacing */
+    padding: 40px 20px; /* Add padding for better spacing */
 }
 
 .input-1 h1 {
@@ -86,6 +84,7 @@
 @media (max-width: 480px) {
     .input-1 {
         padding: 15px; /* Reduce padding for smaller screens */
+      height: 300px;
     }
 
     .input-1 h1 {

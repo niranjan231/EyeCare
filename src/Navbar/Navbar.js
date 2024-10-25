@@ -25,6 +25,9 @@ const Navbar=()=>{
     const [showModal , setShowModal] = useState(false)
 
     const { loginWithRedirect } = useAuth0();
+  const handleGoNavtoHome=()=>{
+    navigate("/")
+  }
     const navigate = useNavigate();
     const handleFlashSale=()=>{
         navigate("flashsale")
@@ -100,7 +103,7 @@ navigate("mainlogo")
 {/* for responsive degines */}
 <div className="nav-res">
 <div className="nav-res-1">
-    <span><IoHome /></span>
+    <span onClick={handleGoNavtoHome}><IoHome /></span>
 </div>
 <div className="nav-res-2">
     <span onClick={openProfile}><FaUser /></span>
