@@ -19,7 +19,7 @@
   
   .footer-logo {
     flex: 1 1 200px; /* Flex property for logo section */
-    margin: 10px; /* Space around logo */
+    margin: -14px;
   }
   
   .footer-logo h2 {
@@ -100,12 +100,14 @@
     }
   
     .footer-links {
-      justify-content: center; /* Center align link sections */
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
   
     .footer-1 {
       text-align: center; /* Center text */
-      margin: 15px 0; /* Space around sections */
+      margin: -28px 0;
     }
   
     .footer-4 input {

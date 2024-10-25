@@ -135,15 +135,16 @@ cursor: pointer;
 
 }
 .nav-res-6{
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     background-color: #1C88B8;
     color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 25px;
+    margin-left: 18px;
+    margin-top: 2px;
     position: absolute;
 }
 
@@ -157,12 +158,16 @@ cursor: pointer;
 /* Tablet */
 @media (max-width: 1024px) {
     .nav-res{
+        width: 100%;
+        height: 10%;
+        background-color: rgba(0, 0, 0, 0.897);
         position: fixed;
         bottom: 0;
         width: 100%;
         display: flex;
         justify-content: space-around;
-        z-index: 1000px;
+        align-items: center;
+        z-index: 10000000;    
     }
     .nav-serch{
         display: none;

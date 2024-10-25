@@ -19,9 +19,9 @@ const Swiper1 = () => {
       } else if (width >= 768) {
         setSlidesToShow(3); // Tablets
       } else if (width >= 576) {
-        setSlidesToShow(2); // Small devices
+        setSlidesToShow(3); // Small devices
       } else {
-        setSlidesToShow(1); // Mobile screens
+        setSlidesToShow(3); // Mobile screens
       }
     };
 
@@ -57,7 +57,7 @@ const Swiper1 = () => {
   ];
 
   return (
-    <>
+    <div className="swiper-11">
       <div className="unserLine">
         <h4 className="carosal2-h2">WEAR THE TREND</h4>
       </div>
@@ -68,7 +68,7 @@ const Swiper1 = () => {
           ))}
         </Slider>
       </div>
-    </>
+    </div>
   );
 };
 

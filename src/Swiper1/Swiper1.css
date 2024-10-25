@@ -3,6 +3,10 @@
   margin: 0;
   overflow: hidden; /* To avoid overflow issues */
   margin-top: 100px;
+  
+}
+.swiper-11{
+  z-index: -1;
 }
 
 .card {

@@ -22,7 +22,7 @@ const Swiper2 = () => {
     } else if (width >= 576) {
       setSlidesToShow(2); // Small devices
     } else {
-      setSlidesToShow(1); // Mobile screens
+      setSlidesToShow(2); // Mobile screens
     }
   };
 
