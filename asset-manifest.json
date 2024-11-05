@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/EyeCare/static/css/main.7c853b8c.css",
-    "main.js": "/EyeCare/static/js/main.9030f6de.js",
+    "main.js": "/EyeCare/static/js/main.33b29109.js",
     "static/js/453.92362f1a.chunk.js": "/EyeCare/static/js/453.92362f1a.chunk.js",
-    "static/media/KidsWear.png": "/EyeCare/static/media/KidsWear.c5a25c414472af4f0a3f.png",
-    "static/media/contactLens.png": "/EyeCare/static/media/contactLens.8336eea9de7c0020217a.png",
-    "static/media/WomanWear.png": "/EyeCare/static/media/WomanWear.fc8932180e6d6470909b.png",
-    "static/media/MenWear.png": "/EyeCare/static/media/MenWear.64586fda93f796485eae.png",
+    "static/media/contactLens.webp": "/EyeCare/static/media/contactLens.65f889abfe8e1a2027a9.webp",
+    "static/media/KidsWear.webp": "/EyeCare/static/media/KidsWear.638b5d2c90a3b572fb5b.webp",
+    "static/media/MenWear.webp": "/EyeCare/static/media/MenWear.774af774f8ec11ef859a.webp",
     "static/media/Banner.webp": "/EyeCare/static/media/Banner.c9ac7c8185f2522871a5.webp",
+    "static/media/WomanWear.webp": "/EyeCare/static/media/WomanWear.972a61737d5c89225083.webp",
     "static/media/flesVanner1.webp": "/EyeCare/static/media/flesVanner1.8008b3dad772e99f056b.webp",
-    "static/media/contactimg.svg": "/EyeCare/static/media/contactimg.e6b676b3c88e209a2b58781606da58e3.svg",
+    "static/media/contact.png": "/EyeCare/static/media/contact.b487617f57825d8c14fe.png",
     "static/media/flashimage2.png": "/EyeCare/static/media/flashimage2.c6af6b95cbb64337c45d.png",
     "static/media/logo.svg": "/EyeCare/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/slick.svg": "/EyeCare/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -19,11 +19,11 @@
     "static/media/slick.woff": "/EyeCare/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/EyeCare/index.html",
     "main.7c853b8c.css.map": "/EyeCare/static/css/main.7c853b8c.css.map",
-    "main.9030f6de.js.map": "/EyeCare/static/js/main.9030f6de.js.map",
+    "main.33b29109.js.map": "/EyeCare/static/js/main.33b29109.js.map",
     "453.92362f1a.chunk.js.map": "/EyeCare/static/js/453.92362f1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c853b8c.css",
-    "static/js/main.9030f6de.js"
+    "static/js/main.33b29109.js"
   ]
 }
