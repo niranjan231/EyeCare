@@ -1,11 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Carosal2.css"
+import "./Carosal2.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 // import Card from "./Card"; // Import your Card component
 import Card from "./Card"
-import "../Responsive.css"
+// import "../Responsive.css"
+import WomanWear  from "../Image/EyeCare _ carosal3_files/WomanWear.png"
+import MenWear from "../Image/EyeCare _ carosal3_files/MenWear.png"
+import contactLens from "../Image/EyeCare _ carosal3_files/contactLens.png";
+import KidsWear from "../Image/EyeCare _ carosal3_files/KidsWear.png";
 
 
 const Carosal2 = () => {
@@ -45,10 +49,10 @@ const Carosal2 = () => {
 
     <div className="underLine"><h3 className="carosal2-h2">Our CategoryD</h3></div>
     <div className="car-four-image">
-        <img src="http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMenWear.927b47f0.png&w=1920&q=75"></img>
-        <img src="http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FWomanWear.789f52c5.png&w=1920&q=75"></img>
-        <img src="http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FKidsWear.7cca3b76.png&w=1920&q=75"></img>
-        <img src="http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcontactLens.71b1c985.png&w=1920&q=75"></img>
+        <img src={WomanWear}></img>
+        <img src={MenWear}></img>
+        <img src={contactLens}></img>
+        <img src={KidsWear}></img>
     </div>
     </>
   );

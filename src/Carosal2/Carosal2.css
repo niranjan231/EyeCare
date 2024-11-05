@@ -49,8 +49,8 @@
 .car-four-image {
   display: flex;
   margin-top: 50px;
-  justify-content: space-evenly;
-  flex-wrap: wrap; /* Enable wrapping to handle smaller screens */
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap;  */
 }
 .underLine {
   border-top: 1px solid #d6d6d6;
@@ -58,8 +58,8 @@
 }
 .car-four-image img {
   width: 100%;
-  max-width: 280px; /* Constrain the image size */
-  height: auto; /* Allow height to adjust based on width */
+  max-width: 280px; 
+  height: auto; 
   border-radius: 25px;
  
 }

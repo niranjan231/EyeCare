@@ -18,6 +18,7 @@ const schema = yup.object().shape({
 });
 
 const Profile = () => {
+  const [activeSection, setActiveSection] = useState('Profile');
   const [imagePreview, setImagePreview] = useState(null);
 
   const {
@@ -50,65 +51,70 @@ const Profile = () => {
       <div className="sidebar">
         <h3>Menu</h3>
         <div className='profile-3'>
-          <li className='profile-4'>Profile</li>
-          <li className='profile-4'>My Orders</li>
-          <li className='profile-4'>Downloads</li>
-          <li className='profile-4'>My Questions</li>
-          <li className='profile-4'>My Reports</li>
-          <li className='profile-4'>Logout</li>
-          </div>
+          <li className='profile-4' onClick={() => setActiveSection('Profile')}>Profile</li>
+          <li className='profile-4' onClick={() => setActiveSection('My Orders')}>My Orders</li>
+          <li className='profile-4' onClick={() => setActiveSection('Downloads')}>Downloads</li>
+          <li className='profile-4' onClick={() => setActiveSection('My Questions')}>My Questions</li>
+          <li className='profile-4' onClick={() => setActiveSection('My Reports')}>My Reports</li>
+          <li className='profile-4' onClick={() => setActiveSection('Logout')}>Logout</li>
+        </div>
       </div>
 
-      {/* Profile Form Section */}
+      {/* Conditional Rendering for Profile Form Section */}
       <div className="form-container">
-        <form onSubmit={handleSubmit(onSubmit)} className="form" encType="multipart/form-data">
-          <h2 className="header">Create Your Profile</h2>
+        {activeSection === 'Profile' && (
+          <form onSubmit={handleSubmit(onSubmit)} className="form" encType="multipart/form-data">
+            <h2 className="header">Create Your Profile</h2>
 
-          <div className="formGroup">
-            <label className="label">Profile Image:</label>
-            <input
-              type="file"
-              accept="image/*"
-              {...register('image')}
-              onChange={handleImageChange}
-              className="inputFile"
-            />
-            {errors.image && <p className="errorText">{errors.image.message}</p>}
-            {imagePreview && <img src={imagePreview} alt="Preview" className="imagePreview" />}
-          </div>
+            <div className="formGroup">
+              <label className="label">Profile Image:</label>
+              <input
+                type="file"
+                accept="image/*"
+                {...register('image')}
+                onChange={handleImageChange}
+                className="inputFile"
+              />
+              {errors.image && <p className="errorText">{errors.image.message}</p>}
+              {imagePreview && <img src={imagePreview} alt="Preview" className="imagePreview" />}
+            </div>
 
-          <div className="formGroup">
-            <label className="label">Name:</label>
-            <input type="text" {...register('name')} className="input" />
-            {errors.name && <p className="errorText">{errors.name.message}</p>}
-          </div>
+            <div className="formGroup">
+              <label className="label">Name:</label>
+              <input type="text" {...register('name')} className="input" />
+              {errors.name && <p className="errorText">{errors.name.message}</p>}
+            </div>
 
-          <div className="formGroup">
-            <label className="label">Email:</label>
-            <input type="email" {...register('email')} className="input" />
-            {errors.email && <p className="errorText">{errors.email.message}</p>}
-          </div>
+            <div className="formGroup">
+              <label className="label">Email:</label>
+              <input type="email" {...register('email')} className="input" />
+              {errors.email && <p className="errorText">{errors.email.message}</p>}
+            </div>
 
-          <div className="formGroup">
-            <label className="label">Contact Number:</label>
-            <input type="text" {...register('contact')} className="input" />
-            {errors.contact && <p className="errorText">{errors.contact.message}</p>}
-          </div>
+            <div className="formGroup">
+              <label className="label">Contact Number:</label>
+              <input type="text" {...register('contact')} className="input" />
+              {errors.contact && <p className="errorText">{errors.contact.message}</p>}
+            </div>
 
-          <div className="formGroup">
-            <label className="label">Bio:</label>
-            <textarea {...register('bio')} className="textarea"></textarea>
-            {errors.bio && <p className="errorText">{errors.bio.message}</p>}
-          </div>
+            <div className="formGroup">
+              <label className="label">Bio:</label>
+              <textarea {...register('bio')} className="textarea"></textarea>
+              {errors.bio && <p className="errorText">{errors.bio.message}</p>}
+            </div>
 
-          <div className="formGroup">
-            <label className="label">Address:</label>
-            <textarea {...register('address')} className="textarea"></textarea>
-            {errors.address && <p className="errorText">{errors.address.message}</p>}
-          </div>
+            <div className="formGroup">
+              <label className="label">Address:</label>
+              <textarea {...register('address')} className="textarea"></textarea>
+              {errors.address && <p className="errorText">{errors.address.message}</p>}
+            </div>
 
-          <button type="submit" className="submitButton">Submit</button>
-        </form>
+            <button type="submit" className="submitButton">Submit</button>
+          </form>
+        )}
+        {activeSection !== 'Profile' && (
+          <h2>{activeSection} Section</h2> // Placeholder for other sections
+        )}
       </div>
     </div>
   );

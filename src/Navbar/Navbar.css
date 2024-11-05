@@ -193,3 +193,61 @@ cursor: pointer;
     cursor: pointer;
 }
 }
+
+
+/* Style for the sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-close {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Sidebar toggle button */
+.nav-sidebar-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    margin-right: 15px;
+}
+
+/* Make sidebar and toggle visible on smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-sidebar-toggle {
+        display: block;
+    }
+    
+    .nav-img {
+        margin-left: auto;
+    }
+
+    .navMenuContainerList {
+        display: none;
+    }
+}
+
+/* Hide the sidebar on larger screens */
+@media screen and (min-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+}
