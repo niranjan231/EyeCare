@@ -6,10 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 // import Card from "./Card"; // Import your Card component
 import Card from "./Card"
 // import "../Responsive.css"
-import WomanWear  from "../Image/EyeCare _ carosal3_files/WomanWear.png"
-import MenWear from "../Image/EyeCare _ carosal3_files/MenWear.png"
-import contactLens from "../Image/EyeCare _ carosal3_files/contactLens.png";
-import KidsWear from "../Image/EyeCare _ carosal3_files/KidsWear.png";
+import KidsWear from "../Image/KidsWear.webp";
+import MenWear from "../Image/MenWear.webp";
+import WomanWear from "../Image/WomanWear.webp";
+import contactLens from "../Image/contactLens.webp";
+
 
 
 const Carosal2 = () => {
@@ -49,7 +50,7 @@ const Carosal2 = () => {
 
     <div className="underLine"><h3 className="carosal2-h2">Our CategoryD</h3></div>
     <div className="car-four-image">
-        <img src={WomanWear}></img>
+        <img src={KidsWear}></img>
         <img src={MenWear}></img>
         <img src={contactLens}></img>
         <img src={KidsWear}></img>

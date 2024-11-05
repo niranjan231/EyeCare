@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Contect.css';  // Import the CSS file
-import contactImg from '../Image/contactimg.svg' 
+import contact from "../Image/contact.png";
 import "../Responsive.css"
 
 
@@ -33,7 +33,7 @@ const Contect = () => {
   return (
     <div className='form-11'>
 <div className='form-1'>
-<img src={contactImg}></img>
+<img src={contact}></img>
 <h6>My Adress</h6>
 <p>Vidya Nagar New Delhi</p>
 <h6>Contact</h6>
