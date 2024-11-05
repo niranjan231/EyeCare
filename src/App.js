@@ -20,6 +20,7 @@ import Demo from './Demo';
 import Offer from './Offer/Offer';
 import Footer from './Footer/Footer';
 import Profile from './Profile/Profile';
+import Login from './Login/Login';
 function App() {
  
   
@@ -27,17 +28,18 @@ function App() {
   return (
     <>
     <Navbar/>
-    <Routes>
+    {/* <Routes>
     <Route path="/" element={<Home/>}/>
       <Route path='/flashsale' element={ <FlashSale/>}/>
       <Route path='mainlogo' element={<MainLogo/>}/>
       <Route path='/contect' element={<Contect/>}/>
       <Route path='/offer' element={<Offer/>}/>
       <Route path='/profile' element={<Profile/>}/>
-    </Routes>
-    <div className='footer-gap'>
+    </Routes> */}
+    {/* <div className='footer-gap'>
     <Footer/>
-    </div>
+    </div> */}
+    <Login/>
 
     
     </>
