@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/EyeCare/static/css/main.bc417923.css",
-    "main.js": "/EyeCare/static/js/main.ffc3c2d6.js",
+    "main.css": "/EyeCare/static/css/main.7c853b8c.css",
+    "main.js": "/EyeCare/static/js/main.9030f6de.js",
     "static/js/453.92362f1a.chunk.js": "/EyeCare/static/js/453.92362f1a.chunk.js",
+    "static/media/KidsWear.png": "/EyeCare/static/media/KidsWear.c5a25c414472af4f0a3f.png",
+    "static/media/contactLens.png": "/EyeCare/static/media/contactLens.8336eea9de7c0020217a.png",
+    "static/media/WomanWear.png": "/EyeCare/static/media/WomanWear.fc8932180e6d6470909b.png",
+    "static/media/MenWear.png": "/EyeCare/static/media/MenWear.64586fda93f796485eae.png",
     "static/media/Banner.webp": "/EyeCare/static/media/Banner.c9ac7c8185f2522871a5.webp",
     "static/media/flesVanner1.webp": "/EyeCare/static/media/flesVanner1.8008b3dad772e99f056b.webp",
     "static/media/contactimg.svg": "/EyeCare/static/media/contactimg.e6b676b3c88e209a2b58781606da58e3.svg",
@@ -14,12 +18,12 @@
     "static/media/logo.webp": "/EyeCare/static/media/logo.c7ea97924a284c83f13b.webp",
     "static/media/slick.woff": "/EyeCare/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/EyeCare/index.html",
-    "main.bc417923.css.map": "/EyeCare/static/css/main.bc417923.css.map",
-    "main.ffc3c2d6.js.map": "/EyeCare/static/js/main.ffc3c2d6.js.map",
+    "main.7c853b8c.css.map": "/EyeCare/static/css/main.7c853b8c.css.map",
+    "main.9030f6de.js.map": "/EyeCare/static/js/main.9030f6de.js.map",
     "453.92362f1a.chunk.js.map": "/EyeCare/static/js/453.92362f1a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc417923.css",
-    "static/js/main.ffc3c2d6.js"
+    "static/css/main.7c853b8c.css",
+    "static/js/main.9030f6de.js"
   ]
 }
