@@ -19,6 +19,9 @@ const Navbar = () => {
         setSidebarOpen(false); // Close the sidebar after navigating
     };
     
+    const handleMobileLogin=()=>{
+        navigate("/login")
+    }
     const handleGoJointoLogin=()=>{
         navigate("login")
     }
@@ -102,7 +105,7 @@ const Navbar = () => {
                     <span onClick={handleGoNavtoHome}><IoHome /></span>
                 </div>
                 <div className="nav-res-2">
-                    <span onClick={openProfile}><FaUser /></span>
+                    <span onClick={handleMobileLogin}><FaUser /></span>
                 </div>
                 <div className="nav-res-3">
                     <span><CiSearch /></span>
