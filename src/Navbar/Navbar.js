@@ -19,6 +19,9 @@ const Navbar = () => {
         setSidebarOpen(false); // Close the sidebar after navigating
     };
     
+    const handleGoJointoLogin=()=>{
+        navigate("login")
+    }
     const handleFlashSale = () => {
         navigate("flashsale");
         setSidebarOpen(false); // Close the sidebar after navigating
@@ -75,7 +78,7 @@ const Navbar = () => {
                 </div>
                 <li onClick={openProfile} className="nav-ques"><FaQuestionCircle /></li>
                 <span className="nav-serch"><CiSearch /></span>
-                <button className="nav-btn">Join</button>
+                <button onClick={handleGoJointoLogin} className="nav-btn">Join</button>
                 <span onClick={handleCartModal} className="nav-cart"><FaCartPlus /></span>
                 <div className="notifaction">{0}</div>
             </div>
