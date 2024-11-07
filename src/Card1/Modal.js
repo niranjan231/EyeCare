@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Modal.css";
-
+import { RxCross2 } from "react-icons/rx";
 
 
 
@@ -36,6 +36,7 @@ const handleChangeBtn=()=>{
         <>
         <div onClick={handleBackModal} className="modal-1"></div>
         <div className="modal-2">
+            <div onClick={handleBackModal} className="modal-cros-20"><span><RxCross2 /></span></div>
                 <div className="modal-3">
                     <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-full-rim-round-lenskart-blu-lb-e14790-c2_csvfile-1653639951597-g_4030.jpg"></img>
                 </div>

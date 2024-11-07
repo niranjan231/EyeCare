@@ -60,6 +60,16 @@
     border-color: #1C88B8;
     font-size: 20px;
 }
+.modal-cros-20{
+    display: flex;
+   
+    justify-content: right;
+    align-items: flex-end;
+}
+.modal-cros-20 span{
+    font-size: 40px;
+    text-align: end;
+    }
 
 .btn-1 {
     color: white;
@@ -108,7 +118,6 @@
     .modal-4 button, .modal-btn-2 {
         width: 100%;
     }
-
     .modal-4 h2, .modal-4 p, .modal-4 span, .modal-strike {
         font-size: 16px;
         margin: 10px;
