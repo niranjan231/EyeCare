@@ -8,12 +8,12 @@ import Swiper2 from './Swiper2/Swiper2';
 // import Carosal3 from './Carosal3/Carosal3';
 // import Carosal4 from './Carosal4/Carosal4';
 import Home from './Home';
-import InputBox from  "./InputBox/InputBox"
+import InputBox from "./InputBox/InputBox"
 import MainLogo from './MainLogo';
 // import Cemra from "./Cemra/Cemra"
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Contect from './Contect/Contect';
 import FlashSale from './FlashSale/FlashSale';
 import Demo from './Demo';
@@ -22,29 +22,38 @@ import Footer from './Footer/Footer';
 import Profile from './Profile/Profile';
 import Login from './Login/Login';
 import Registration from './Register/Registration';
+import { auth } from './Firebase';
 function App() {
- 
-  
+  const [userName , setUserName] = useState("");
+useEffect(()=>{
+auth.onAuthStateChanged(user=>{
+  if(user){
+    setUserName(user.displayName)
+  }else{
+    setUserName("")
+  }
+  console.log(user);
+})
+},[])
 
   return (
     <>
-    <Navbar/>
-    <Routes>
-    <Route path="/" element={<Home/>}/>
-      <Route path='/flashsale' element={ <FlashSale/>}/>
-      <Route path='mainlogo' element={<MainLogo/>}/>
-      <Route path='/contect' element={<Contect/>}/>
-      <Route path='/offer' element={<Offer/>}/>
-      <Route path='/profile' element={<Profile/>}/>
-      <Route path='/registration' element={<Registration/>}/>
-      <Route path='/login' element ={<Login/>}/>
-    </Routes>
-    {/* <div className='footer-gap'>
-    <Footer/>
-    </div> */}
-    {/* <Registration/> */}
+      <Navbar userName={userName} />
+      {/* <div>{userName}</div> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/flashsale' element={<FlashSale />} />
+        <Route path='mainlogo' element={<MainLogo />} />
+        <Route path='/contect' element={<Contect />} />
+        <Route path='/offer' element={<Offer />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route path='/registration' element={<Registration />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
+      <div className='footer-gap'>
+        <Footer />
+      </div>
 
-    
     </>
   );
 }

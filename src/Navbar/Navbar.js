@@ -8,7 +8,8 @@ import Modal2 from "./Modal2";
 import Logo from '../Image/logo.webp';
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
+    console.log(props)
     const [showModal, setShowModal] = useState(false);
     const [sidebarOpen, setSidebarOpen] = useState(false); // State to control sidebar visibility
     const { loginWithRedirect } = useAuth0();
@@ -20,7 +21,7 @@ const Navbar = () => {
     };
     
     const handleMobileLogin=()=>{
-        navigate("/login")
+        navigate("login")
     }
     const handleGoJointoLogin=()=>{
         navigate("login")
@@ -82,6 +83,7 @@ const Navbar = () => {
                 <li onClick={openProfile} className="nav-ques"><FaQuestionCircle /></li>
                 <span className="nav-serch"><CiSearch /></span>
                 <button onClick={handleGoJointoLogin} className="nav-btn">Join</button>
+                <span>{props.userName}</span>
                 <span onClick={handleCartModal} className="nav-cart"><FaCartPlus /></span>
                 <div className="notifaction">{0}</div>
             </div>

@@ -8,7 +8,7 @@ import Carosal4 from './Carosal4/Carosal4';
 import Footer from './Footer/Footer';
 
 
-function Home() {
+function Home({userName}) {
   return (
     <>
     {/* <Navbar/> */}
