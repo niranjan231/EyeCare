@@ -6,15 +6,15 @@
     /* display: flex;
     flex-direction: column; */
     display: flex;
-    gap: 30px;
-    padding: 35px 0 ;
-    background-color: #f3f4f6;
+    gap: 13px;    padding: 35px 0 ;
+    background-color: rgba(128, 128, 128, 0.251)
+    ;
 }
 .card1-2{
     width: 349px;
     height: 100%;
     position: sticky !important;
-    top: 97px;
+    top: 63px;
     min-height: 530px;    background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
     /* position: relative; */

@@ -2,39 +2,31 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 const Demo = () => {
-    const [data, setData] = useState(null);
-    const [error, setError] = useState(null);
+  const [data, setData] = useState(null); // Initialize as null for an object
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await axios.get('https://eye-care.developmentalphawizz.com/api/v1/products/latest');
-                setData(res.data);
-                console.log("Response data:", res.data);
-            } catch (err) {
-                setError(err.message);
-                console.error("Error fetching data:", err);
-            }
-        };
+  useEffect(() => {
+    axios.get("https://grocypay.com/api/v1/products/search?name=c2Ftb3Nh")
+      .then((res) => {
+        console.log(res.data);
+        setData(res.data); // Set the whole response data to state
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-        fetchData();
-    }, []);
-
-    return (
-        <div>
-            <h1>SpaceX Latest Launch</h1>
-            {error && <p style={{ color: 'red' }}>Error: {error}</p>}
-            {data ? (
-                <div>
-                    <h2>{data.name}</h2>
-                    <p>{data.details}</p>
-                    <p>{data.date_utc}</p>
-                </div>
-            ) : (
-                <p>Loading...</p>
-            )}
-        </div>
-    );
-}
+  return (
+    <div>
+    
+       {/* { <div>
+          <p>ID: {data.id}</p>
+          <p>Order Status: {data.status}</p>
+          <p>Tracking Number: {data.shipping_address_datacontact_person_name
+}</p>
+        </div>} */}
+    
+    </div>
+  );
+};
 
 export default Demo;

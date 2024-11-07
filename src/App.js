@@ -39,7 +39,6 @@ auth.onAuthStateChanged(user=>{
   return (
     <>
       <Navbar userName={userName} />
-      {/* <div>{userName}</div> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/flashsale' element={<FlashSale />} />
