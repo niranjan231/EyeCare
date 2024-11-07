@@ -201,8 +201,8 @@ cursor: pointer;
     left: 0;
     height: 100%;
     width: 250px;
-    background-color: #151414;
-    color: #fff;
+    background-olor: white;
+    color: rgb(207, 194, 194);
     padding: 20px;
     z-index: 1000;
     transition: transform 0.3s ease;
@@ -211,13 +211,13 @@ cursor: pointer;
 .sidebar-content {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 46px;
 }
 
 .sidebar-close {
     cursor: pointer;
     font-size: 24px;
-    color: #fff;
+    color: black;  
 }
 
 /* Sidebar toggle button */
