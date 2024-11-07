@@ -30,7 +30,7 @@
 
 /* Ensure inputs and buttons are responsive */
 .login-inp,
-.login-btn-6 {
+.login-btn-6, .login-with-google {
     width: 100%;
     max-width: 400px;
     height: 45px;
@@ -38,6 +38,12 @@
 
 .login-btn-6 {
     background-color: #1C88B8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.login-with-google{
+    background-color: rgb(34, 34, 167);
     color: white;
     border-radius: 5px;
     border: none;

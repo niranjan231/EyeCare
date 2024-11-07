@@ -3,7 +3,7 @@ import logo from "../Image/logo.webp";
 import { useState } from "react";
 import {  useNavigate } from "react-router-dom";
 import { auth } from "../Firebase";
-import { signInWithEmailAndPassword} from "firebase/auth";
+import { signInWithEmailAndPassword, GoogleAuthProvider,signInWithPopup} from "firebase/auth";
 
 const Login = () => {
     const navigate = useNavigate()
@@ -18,6 +18,22 @@ const Login = () => {
     const [submitbtn , setSubmitBtn] = useState(false);
 
     // Login Submision
+    // login with google
+    const googleprovider=  new GoogleAuthProvider();
+    const handleLoginGoogleBtn=()=>{
+signInWithPopup(auth,googleprovider)
+.then(async(res)=>{
+    console.log(res)
+    setSubmitBtn(false)
+    const user = res.user;
+    navigate("/")
+})
+.catch(err=>{
+    console.log(err);
+    setSubmitBtn(false)
+    setError(err.message);
+})
+    }
     const handleLoginForm = (e) => {
         setEmail(e.target.value);
     }
@@ -91,6 +107,7 @@ const Login = () => {
                     <button className="login-btn-6" onClick={handleLoginRegSubmit} disabled={submitbtn}>Login</button>
                     <div onClick={goRegtoLogin} className="login-10">Register</div>
                     <div style={{color:"red"}}>{error}</div>
+                    <button className="login-with-google" onClick={handleLoginGoogleBtn}>Login With Google</button>
                 </form>
             </div>
         </>
