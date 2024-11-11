@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EyeCare/static/css/main.fbeb463e.css",
-    "main.js": "/EyeCare/static/js/main.bad5dc34.js",
+    "main.js": "/EyeCare/static/js/main.b9cb4e11.js",
     "static/js/453.92362f1a.chunk.js": "/EyeCare/static/js/453.92362f1a.chunk.js",
     "static/media/contactLens.webp": "/EyeCare/static/media/contactLens.65f889abfe8e1a2027a9.webp",
     "static/media/KidsWear.webp": "/EyeCare/static/media/KidsWear.638b5d2c90a3b572fb5b.webp",
@@ -19,11 +19,11 @@
     "static/media/slick.woff": "/EyeCare/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/EyeCare/index.html",
     "main.fbeb463e.css.map": "/EyeCare/static/css/main.fbeb463e.css.map",
-    "main.bad5dc34.js.map": "/EyeCare/static/js/main.bad5dc34.js.map",
+    "main.b9cb4e11.js.map": "/EyeCare/static/js/main.b9cb4e11.js.map",
     "453.92362f1a.chunk.js.map": "/EyeCare/static/js/453.92362f1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbeb463e.css",
-    "static/js/main.bad5dc34.js"
+    "static/js/main.b9cb4e11.js"
   ]
 }
