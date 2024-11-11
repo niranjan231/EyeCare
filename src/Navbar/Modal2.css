@@ -68,10 +68,15 @@
 .modal2-9 {
     margin-top: 35px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* gap: 40; */
     margin-left: 15px;
 }
-
+.modal2-cart-data{
+    display: flex;
+    justify-content: space-between;
+}
 .modal2-8 {
     display: flex;
     flex-direction: column;
@@ -104,8 +109,8 @@
 }
 
 .modal2-10 img {
-    width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 .modal2-11 {

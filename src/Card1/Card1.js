@@ -18,7 +18,7 @@ const Card1 = () => {
 
   const dispatch = useDispatch();
   const getItem = useSelector((state) => state.allCart.items)
-  // console.log(item)
+  // console.log(getItem)
 
 
 
@@ -28,27 +28,53 @@ const Card1 = () => {
   const [show2, setShow2] = useState(true)
   const [show3, setShow3] = useState(true)
   const [show4, setShow4] = useState(true);
+
+  const [mdetales , setMdetales] = useState([]);
   // const [show5 , setShow5] = useState(false)
+// add category
+const [catgy , setCatgy] = useState(getItem)
+
+
+const UpdateItem=(carditem)=>{
+  const filterCatogery = getItem.filter((curdItem)=>{
+      return curdItem.category === carditem
+  })
+  setCatgy(filterCatogery)
+      }
+
+
+
 
 
   const handleOpenDropdown5 = () => {
     setShow4(false)
+    UpdateItem("men")
   }
   const handleOpenDropdown6 = () => {
     setShow4(true)
+    UpdateItem("kids")
+
   }
   const handleOpenDropdown4 = () => {
     setShow3(true)
+    UpdateItem("women")
+
   }
   const handleOpenDropdown3 = () => {
     setShow3(false)
+    UpdateItem("men")
+
   }
   const handleOpenDropdown = () => {
     setShow2(false)
+    UpdateItem("kids")
+
   }
 
   const handleOpenDropdown2 = () => {
     setShow2(true)
+    UpdateItem("women")
+
   }
   const handleLoadMoreBtnCard1 = () => {
     setShow(true)
@@ -57,7 +83,9 @@ const Card1 = () => {
   //   setShow5(true)
   // }
 
-  const handleModal = () => {
+  const handleModal = (Modal) => {
+setMdetales([{...Modal}])
+console.log(mdetales)
     setShow1(true)
   }
 
@@ -103,13 +131,15 @@ const Card1 = () => {
 
           </div>
         </div>
+
+
+        {/* Product data */}
         <div className='loadmoreContainer'>
           <div className='card1-5'>
             {
-              getItem.map((data, id) => {
+              catgy.map((data, id) => {
                 return <div key={data.id} data={data} className='card1-3'>
-                  {/* {console.log(id)} */}
-                  <img onClick={handleModal} src={data.image}></img>
+                  <img onClick={()=>handleModal(data)} src={data.image}></img>
                   <span>Round Black Silver Sunglass</span>
                   <div className='card1-4'><strike>RS:232</strike>
                     <button onClick={() => dispatch(handleAddToCart(data))}><FaShoppingCart /></button>
@@ -125,7 +155,7 @@ const Card1 = () => {
               {
                 getItem.map((data) => {
                   return <div key={data.id} className='card1-3'>
-                    <img src={data.image}></img>
+                    <img onClick={()=>handleModal(data)} src={data.image}></img>
                     <span>Round Black Silver Sunglass</span>
                     <div className='card1-4'><strike>RS:232</strike><button><FaShoppingCart /></button></div>
                   </div>
@@ -144,7 +174,7 @@ const Card1 = () => {
         Load More</button>
       </div>
       {
-        show1 && <Modal handleBackModal={handleBackModal} />
+        show1 && <Modal mdetales ={mdetales} handleBackModal={handleBackModal} />
       }
     </>
   )

@@ -7,9 +7,13 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Modal2 from "./Modal2";
 import Logo from '../Image/logo.webp';
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Navbar = (props) => {
-    console.log(props)
+    // console.log(props)
+
+
+
     const [showModal, setShowModal] = useState(false);
     const [sidebarOpen, setSidebarOpen] = useState(false); // State to control sidebar visibility
     const { loginWithRedirect } = useAuth0();
@@ -85,7 +89,7 @@ const Navbar = (props) => {
                 <button onClick={handleGoJointoLogin} className="nav-btn">Join</button>
                 <span>{props.userName}</span>
                 <span onClick={handleCartModal} className="nav-cart"><FaCartPlus /></span>
-                <div className="notifaction">{0}</div>
+                <div className="notifaction">0</div>
             </div>
 
             {/* Sidebar for small screens */}
