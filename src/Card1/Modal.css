@@ -126,10 +126,9 @@
 @media (max-width: 480px) {
     .modal-2 {
         width: 90%;
-        height: 80vh; /* Set to 80% of the viewport height */
-        flex-direction: column;
+        height: 104vh;        flex-direction: column;
         padding: 20px;
-        overflow-y: auto; /* Enable scrolling if content exceeds the height */
+        /* overflow-y: auto; Enable scrolling if content exceeds the height */
     }
 
     .modal-3 img {
