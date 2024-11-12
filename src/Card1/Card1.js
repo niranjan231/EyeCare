@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { handleAddToCart } from '../features/cartSlice';
 import axios from 'axios';
 import "../Responsive.css"
+import "./Modal.css";
 
 
 
@@ -29,18 +30,38 @@ const Card1 = () => {
   const [show3, setShow3] = useState(true)
   const [show4, setShow4] = useState(true);
 
-  const [mdetales , setMdetales] = useState([]);
+  const [mdetales, setMdetales] = useState([]);
   // const [show5 , setShow5] = useState(false)
-// add category
-const [catgy , setCatgy] = useState(getItem)
+  // add category
+  const [catgy, setCatgy] = useState(getItem)
 
 
-const UpdateItem=(carditem)=>{
-  const filterCatogery = getItem.filter((curdItem)=>{
+  const UpdateItem = (carditem) => {
+    const filterCatogery = getItem.filter((curdItem) => {
       return curdItem.category === carditem
-  })
-  setCatgy(filterCatogery)
-      }
+    })
+    setCatgy(filterCatogery)
+  }
+const handleSubCat1=()=>{
+  UpdateItem("men")
+}
+const handleSubCat2=()=>{
+  UpdateItem("women")
+}
+const handleSubCat3=()=>{
+  UpdateItem("kids")
+}
+const handleSubCat4=()=>{
+  UpdateItem("men")
+}
+const handleSubCat5=()=>{
+  UpdateItem("kids")
+}
+const handleSubCat6=()=>{
+  UpdateItem("women")
+}
+
+
 
 
 
@@ -84,8 +105,8 @@ const UpdateItem=(carditem)=>{
   // }
 
   const handleModal = (Modal) => {
-setMdetales([{...Modal}])
-console.log(mdetales)
+    setMdetales([{ ...Modal }])
+    console.log(mdetales)
     setShow1(true)
   }
 
@@ -103,8 +124,8 @@ console.log(mdetales)
                 :
                 (<>
                   <span onClick={handleOpenDropdown2} className='modal-8'>Classic Eyeglasses<RiArrowDropDownLine /></span>
-                  <span className='open-1'>New Arrival</span>
-                  <span className='open-2'>Best Sellers</span>
+                  <span onClick={handleSubCat1} className='open-1'>New Arrival</span>
+                  <span onClick={handleSubCat2} className='open-2'>Best Sellers</span>
                 </>
                 )
             }
@@ -113,8 +134,8 @@ console.log(mdetales)
                 :
                 (<>
                   <span onClick={handleOpenDropdown4} className='modal-8'>Classic Eyeglasses<RiArrowDropDownLine /></span>
-                  <span className='open-1'>New Arrival</span>
-                  <span className='open-2'>Best Sellers</span>
+                  <span onClick={handleSubCat3}  className='open-1'>New Arrival</span>
+                  <span onClick={handleSubCat4}  className='open-2'>Best Sellers</span>
                 </>
                 )
             }
@@ -123,8 +144,8 @@ console.log(mdetales)
                 :
                 (<>
                   <span onClick={handleOpenDropdown6} className='modal-8'>Classic Eyeglasses<RiArrowDropDownLine /></span>
-                  <span className='open-1'>New Arrival</span>
-                  <span className='open-2'>Best Sellers</span>
+                  <span onClick={handleSubCat5}  className='open-1'>New Arrival</span>
+                  <span onClick={handleSubCat6}  className='open-2'>Best Sellers</span>
                 </>
                 )
             }
@@ -139,7 +160,7 @@ console.log(mdetales)
             {
               catgy.map((data, id) => {
                 return <div key={data.id} data={data} className='card1-3'>
-                  <img onClick={()=>handleModal(data)} src={data.image}></img>
+                  <img onClick={() => handleModal(data)} src={data.image}></img>
                   <span>Round Black Silver Sunglass</span>
                   <div className='card1-4'><strike>RS:232</strike>
                     <button onClick={() => dispatch(handleAddToCart(data))}><FaShoppingCart /></button>
@@ -155,7 +176,7 @@ console.log(mdetales)
               {
                 getItem.map((data) => {
                   return <div key={data.id} className='card1-3'>
-                    <img onClick={()=>handleModal(data)} src={data.image}></img>
+                    <img onClick={() => handleModal(data)} src={data.image}></img>
                     <span>Round Black Silver Sunglass</span>
                     <div className='card1-4'><strike>RS:232</strike><button><FaShoppingCart /></button></div>
                   </div>
@@ -174,7 +195,7 @@ console.log(mdetales)
         Load More</button>
       </div>
       {
-        show1 && <Modal mdetales ={mdetales} handleBackModal={handleBackModal} />
+        show1 && <Modal mdetales={mdetales} handleBackModal={handleBackModal} />
       }
     </>
   )

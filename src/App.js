@@ -24,17 +24,18 @@ import Login from './Login/Login';
 import Registration from './Register/Registration';
 import { auth } from './Firebase';
 function App() {
-  const [userName , setUserName] = useState("");
-useEffect(()=>{
-auth.onAuthStateChanged(user=>{
-  if(user){
-    setUserName(user.displayName)
-  }else{
-    setUserName("")
-  }
-  console.log(user);
-})
-},[])
+  
+  const [userName, setUserName] = useState("");
+  useEffect(() => {
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        setUserName(user.displayName)
+      } else {
+        setUserName("")
+      }
+      console.log(user);
+    })
+  }, [])
 
   return (
     <>

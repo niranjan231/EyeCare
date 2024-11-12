@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "./Swiper1.css";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Swiper1Card1 from "./Swiper1Card1";
 import "../Responsive.css";
@@ -13,36 +13,33 @@ const Swiper1 = () => {
     const updateSlidesToShow = () => {
       const width = window.innerWidth;
       if (width >= 1200) {
-        setSlidesToShow(5); // Large screens
+        setSlidesToShow(5); 
       } else if (width >= 992) {
-        setSlidesToShow(4); // Medium screens
+        setSlidesToShow(4); 
       } else if (width >= 768) {
-        setSlidesToShow(3); // Tablets
+        setSlidesToShow(3); 
       } else if (width >= 576) {
-        setSlidesToShow(3); // Small devices
+        setSlidesToShow(2); 
       } else {
-        setSlidesToShow(3); // Mobile screens
+        setSlidesToShow(1); 
       }
     };
 
-    // Initial check
     updateSlidesToShow();
-
-    // Add event listener for window resize
     window.addEventListener("resize", updateSlidesToShow);
 
-    // Clean up event listener on component unmount
     return () => window.removeEventListener("resize", updateSlidesToShow);
   }, []);
 
   const settings = {
-    dots: true,          
-    infinite: true,      
-    speed: 500,          
-    slidesToShow,        // Dynamically set slidesToShow
-    slidesToScroll: 1,   
-    autoplay: true,      
-    autoplaySpeed: 2000, 
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
   };
 
   const cards = [

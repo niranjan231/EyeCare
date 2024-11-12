@@ -4,7 +4,8 @@ import { IoCartOutline } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 import "../Responsive.css"
 import { useSelector } from "react-redux";
-
+import { useDispatch } from "react-redux";
+import { removeCard } from "../features/cartSlice";
 
 
 
@@ -13,6 +14,7 @@ import { useSelector } from "react-redux";
 
 
 const Modal2 = ({ handleCartModalClose }) => {
+    const dispatch = useDispatch()
 
     const {cart, totalQuantaty,totalPrice } = useSelector((state)=>state.allCart)
 
@@ -36,10 +38,10 @@ const Modal2 = ({ handleCartModalClose }) => {
                 </div>
                 <div className="modal2-9">
                     {
-                        cart.map((data2)=>{
-                            return <> <div className="modal2-cart-data"> <div className="modal2-8">
+                        cart.map((data2, id)=>{
+                            return <> <div key={data2.id} className="modal2-cart-data"> <div className="modal2-8">
                             <button>-</button>
-                                <span>{incresCounter}</span>
+                                <span>{()=> incresCounter({id: data2.id})}</span>
                                 <button onClick={handleIncresCountModal2}>+</button>
                             </div>
                             <div className="modal2-10">
@@ -51,7 +53,7 @@ const Modal2 = ({ handleCartModalClose }) => {
                                 <p>7*11MB</p>
                             </div>
                             <div className="modal2-12">
-                            <p><RxCross2 /></p>
+                            <p onClick={()=> dispatch(removeCard({id: data2.id}))}><RxCross2 /></p>
                             </div>
                             </div>
                            <hr></hr>
@@ -101,6 +103,9 @@ const Modal2 = ({ handleCartModalClose }) => {
                 </div>
                 <hr /> */}
                 
+
+
+                {/* add checkpout */}
             </div>
         </>
     )

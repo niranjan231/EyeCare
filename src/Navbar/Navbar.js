@@ -11,7 +11,9 @@ import { useSelector } from "react-redux";
 
 const Navbar = (props) => {
     // console.log(props)
-
+// incress add to card
+const incresCard = useSelector((state)=> state.allCart.cart);
+// console.log(incresCard)
 
 
     const [showModal, setShowModal] = useState(false);
@@ -89,7 +91,7 @@ const Navbar = (props) => {
                 <button onClick={handleGoJointoLogin} className="nav-btn">Join</button>
                 <span>{props.userName}</span>
                 <span onClick={handleCartModal} className="nav-cart"><FaCartPlus /></span>
-                <div className="notifaction">0</div>
+                <div className="notifaction">{incresCard.length}</div>
             </div>
 
             {/* Sidebar for small screens */}
