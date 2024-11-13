@@ -11,15 +11,33 @@ import contactLens from "../Image/contactLens.webp";
 
 const Carosal2 = () => {
   const settings = {
-    dots: false,           // Hide dots for smoother scrolling
-    infinite: true,        // Infinite scrolling
-    speed: 2000,           // Slow down animation speed for smoothness
-    slidesToShow: 6,       // Show 6 cards at a time
-    slidesToScroll: 2,     // Scroll 2 cards at a time for better flow
-    autoplay: true,        // Enable autoplay
-    autoplaySpeed: 0,      // Continuous autoplay, no pauses
-    cssEase: "linear",     // Linear easing for smooth animation
-    pauseOnHover: false,   // Keep scrolling without pausing on hover
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 6,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 768, // Mobile view (up to 768px wide)
+        settings: {
+          slidesToShow: 3, // Show 3 cards on mobile
+          slidesToScroll: 1,
+          speed: 1000, // Adjusted speed for mobile
+          autoplaySpeed: 3000, // Pause between autoplays for better mobile experience
+        },
+      },
+      {
+        breakpoint: 480, // Smaller mobile screens (up to 480px wide)
+        settings: {
+          slidesToShow: 2, // Show 2 cards for very small screens
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const cards = [

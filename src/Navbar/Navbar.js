@@ -11,9 +11,9 @@ import { useSelector } from "react-redux";
 
 const Navbar = (props) => {
     // console.log(props)
-// incress add to card
-const incresCard = useSelector((state)=> state.allCart.cart);
-// console.log(incresCard)
+    // incress add to card
+    const incresCard = useSelector((state) => state.allCart.cart);
+    // console.log(incresCard)
 
 
     const [showModal, setShowModal] = useState(false);
@@ -25,18 +25,18 @@ const incresCard = useSelector((state)=> state.allCart.cart);
         navigate("/");
         setSidebarOpen(false); // Close the sidebar after navigating
     };
-    
-    const handleMobileLogin=()=>{
+
+    const handleMobileLogin = () => {
         navigate("login")
     }
-    const handleGoJointoLogin=()=>{
+    const handleGoJointoLogin = () => {
         navigate("login")
     }
     const handleFlashSale = () => {
         navigate("flashsale");
         setSidebarOpen(false); // Close the sidebar after navigating
     };
-    
+
     const openProfile = () => {
         navigate("profile");
         setSidebarOpen(false); // Close the sidebar after navigating
@@ -52,7 +52,9 @@ const incresCard = useSelector((state)=> state.allCart.cart);
         navigate("contect");
         setSidebarOpen(false); // Close the sidebar after navigating
     };
-
+    const handleProductfromNavbar = () => {
+        navigate("./product")
+    }
     const toggleSidebar = () => setSidebarOpen(!sidebarOpen); // Toggle sidebar
 
     return (
@@ -68,21 +70,12 @@ const incresCard = useSelector((state)=> state.allCart.cart);
                 <div className="navMenuContainerList">
                     <div className="NavMenuList">
                         <div className="hoverList">
-                            <li>Eyeglasses</li>
-                            <div className="hoverComponent">
-                                <div className="hoverContent">
-                                    <div className="hoverNavList">
-                                        <a href="https://www.google.com">Round Frames</a>
-                                        <a href="https://www.google.com">Sunglasses</a>
-                                        <a href="https://www.google.com">Rounded Glasses</a>
-                                        <a href="https://www.google.com">Computer Glasses</a>
-                                    </div>
-                                </div>
-                            </div>
+                            <li onClick={handleProductfromNavbar}>Product</li>
+
                         </div>
                     </div>
-                    <li>Kids Glasses</li>
-                    <li>Sunglasses</li>
+                    <li>Category</li>
+                    <li>Brand</li>
                     <li onClick={handleContect}>Contact</li>
                     <li onClick={handleFlashSale}>Flash Sale</li>
                 </div>
@@ -119,7 +112,7 @@ const incresCard = useSelector((state)=> state.allCart.cart);
                     <span><CiSearch /></span>
                 </div>
                 <div className="nav-res-4">
-                    <div className="nav-res-6">45</div>
+                    <div className="nav-res-6">{incresCard.length}</div>
                     <span onClick={handleCartModal}><FaCartPlus /></span>
                 </div>
             </div>

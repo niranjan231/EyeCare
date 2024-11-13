@@ -17,11 +17,11 @@ const Swiper1 = () => {
       } else if (width >= 992) {
         setSlidesToShow(4); 
       } else if (width >= 768) {
-        setSlidesToShow(3); 
+        setSlidesToShow(4); 
       } else if (width >= 576) {
-        setSlidesToShow(2); 
+        setSlidesToShow(3); 
       } else {
-        setSlidesToShow(1); 
+        setSlidesToShow(3); 
       }
     };
 
