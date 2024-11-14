@@ -24,7 +24,7 @@ const Modal2 = ({ handleCartModalClose }) => {
     }
     return (
         <>
-            <div className="modal2-1"></div>
+            <div onClick={handleCartModalClose} className="modal2-1"></div>
             <div className="modal2-2">
 
                 <div className="modal2-3">

@@ -34,7 +34,7 @@ function App() {
       } else {
         setUserName("")
       }
-      console.log(user);
+      // console.log(user);
     })
   }, [])
 

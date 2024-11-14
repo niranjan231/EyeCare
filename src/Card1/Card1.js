@@ -8,11 +8,27 @@ import { handleAddToCart } from '../features/cartSlice';
 import axios from 'axios';
 import "../Responsive.css"
 import "./Modal.css";
-
+// import {GetProduct} from "../Service/GetService"
+import { GetProduct } from '../Service/GetService';
 
 
 
 const Card1 = () => {
+  const [apiData, setApiData] = useState([])
+
+
+
+  useEffect(() => {
+    GetProduct('/api/v1/brands/products/7')
+      .then(res => {
+        console.log(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }, [])
+
+
 
 
 
@@ -42,24 +58,24 @@ const Card1 = () => {
     })
     setCatgy(filterCatogery)
   }
-const handleSubCat1=()=>{
-  UpdateItem("men")
-}
-const handleSubCat2=()=>{
-  UpdateItem("women")
-}
-const handleSubCat3=()=>{
-  UpdateItem("kids")
-}
-const handleSubCat4=()=>{
-  UpdateItem("men")
-}
-const handleSubCat5=()=>{
-  UpdateItem("kids")
-}
-const handleSubCat6=()=>{
-  UpdateItem("women")
-}
+  const handleSubCat1 = () => {
+    UpdateItem("men")
+  }
+  const handleSubCat2 = () => {
+    UpdateItem("women")
+  }
+  const handleSubCat3 = () => {
+    UpdateItem("kids")
+  }
+  const handleSubCat4 = () => {
+    UpdateItem("men")
+  }
+  const handleSubCat5 = () => {
+    UpdateItem("kids")
+  }
+  const handleSubCat6 = () => {
+    UpdateItem("women")
+  }
 
 
 
@@ -134,8 +150,8 @@ const handleSubCat6=()=>{
                 :
                 (<>
                   <span onClick={handleOpenDropdown4} className='modal-8'>Classic Eyeglasses<RiArrowDropDownLine /></span>
-                  <span onClick={handleSubCat3}  className='open-1'>New Arrival</span>
-                  <span onClick={handleSubCat4}  className='open-2'>Best Sellers</span>
+                  <span onClick={handleSubCat3} className='open-1'>New Arrival</span>
+                  <span onClick={handleSubCat4} className='open-2'>Best Sellers</span>
                 </>
                 )
             }
@@ -144,8 +160,8 @@ const handleSubCat6=()=>{
                 :
                 (<>
                   <span onClick={handleOpenDropdown6} className='modal-8'>Classic Eyeglasses<RiArrowDropDownLine /></span>
-                  <span onClick={handleSubCat5}  className='open-1'>New Arrival</span>
-                  <span onClick={handleSubCat6}  className='open-2'>Best Sellers</span>
+                  <span onClick={handleSubCat5} className='open-1'>New Arrival</span>
+                  <span onClick={handleSubCat6} className='open-2'>Best Sellers</span>
                 </>
                 )
             }
