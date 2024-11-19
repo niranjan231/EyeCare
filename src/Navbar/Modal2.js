@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Modal2.css";
+import "../App.css"
 import { IoCartOutline } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 import "../Responsive.css"
@@ -17,6 +17,7 @@ const Modal2 = ({ handleCartModalClose }) => {
     const dispatch = useDispatch()
 
     const {cart, totalQuantaty,totalPrice } = useSelector((state)=>state.allCart)
+    console.log(cart)
 
     const [incresCounter , setIncresCounter] = useState(1)
     const handleIncresCountModal2=()=>{

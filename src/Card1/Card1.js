@@ -1,13 +1,11 @@
 import react, { useEffect, useState } from 'react';
-import './Card1.css';
+import "../App.css";
 import { FaShoppingCart } from "react-icons/fa";
 import Modal from "./Modal"
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useSelector, useDispatch } from 'react-redux';
 import { handleAddToCart } from '../features/cartSlice';
 import axios from 'axios';
-import "../Responsive.css"
-import "./Modal.css";
 // import {GetProduct} from "../Service/GetService"
 import { GetProduct } from '../Service/GetService';
 

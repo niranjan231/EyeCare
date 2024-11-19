@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import "./Swiper1.css";
+import "../App.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Swiper1Card1 from "./Swiper1Card1";
-import "../Responsive.css";
 
 const Swiper1 = () => {
   const [slidesToShow, setSlidesToShow] = useState(6);

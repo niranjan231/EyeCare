@@ -1,6 +1,6 @@
-import "./InputBox.css"
+import "../App.css"
 import { CiSearch } from "react-icons/ci";
-import "../Responsive.css"
+
 // import Banner from "../Image/Ba.webp"
 
 

@@ -25,7 +25,7 @@ import Registration from './Register/Registration';
 import { auth } from './Firebase';
 import Card1 from './Card1/Card1';
 function App() {
-  
+
   const [userName, setUserName] = useState("");
   useEffect(() => {
     auth.onAuthStateChanged(user => {
@@ -50,7 +50,7 @@ function App() {
         <Route path='/profile' element={<Profile />} />
         <Route path='/registration' element={<Registration />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/product' element={<Card1/>}></Route>
+        <Route path='/product' element={<Card1 />}></Route>
       </Routes>
       <div className='footer-gap'>
         <Footer />

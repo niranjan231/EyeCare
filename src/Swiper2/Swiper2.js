@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import "./Swiper2.css";
-import "../Responsive.css";
+import "../App.css";
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

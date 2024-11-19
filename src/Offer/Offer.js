@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import flesVanner1 from "../Image/flesVanner1.webp";
-import "./Offer.css";
-import "../Responsive.css"
+import "../App.css"
 
 
 const Offer = () => {

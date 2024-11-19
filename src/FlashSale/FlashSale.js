@@ -1,9 +1,8 @@
-import "./FlashSale.css";
 import { IoHomeOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import flashVanner1 from '../Image/flesVanner1.webp'
 import flashimage2 from '../Image/flashimage2.png'
-import "../Responsive.css"
+import "../App.css"
 
 
 

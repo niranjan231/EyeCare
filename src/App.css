@@ -1,7 +1,2343 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.footer-gap{
+
+.footer-gap {
     margin-top: 15px;
 }
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card1-1 {
+    /* display: flex;
+    flex-direction: column; */
+    display: flex;
+    gap: 13px;
+    padding: 35px 0;
+    background-color: rgba(128, 128, 128, 0.251);
+}
+
+.card1-2 {
+    width: 349px;
+    height: 100%;
+    position: sticky !important;
+    top: 63px;
+    min-height: 530px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    /* margin-left: 50px; */
+    /* position: sticky; */
+    /* top:0; */
+    /* position: fixed; */
+    /* z-index: -1; */
+    padding-left: 20px;
+}
+
+.card1-3 {
+    width: 235px;
+    height: 300px;
+    background-color: rgba(78, 74, 74, 0.05);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card1-2 span {
+    padding: 10px;
+}
+
+.card1-7 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.modal-8 {
+    /* font-weight: 600; */
+    cursor: pointer;
+    margin-top: 5px;
+    /* margin-left: 15px; */
+    /* position: sticky;
+    top: 0; */
+}
+
+.open-1 {
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-left: 15px;
+    border-radius: 10px
+}
+
+.open-2 {
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 10px
+}
+
+.card1-3 span {
+    font-size: 15px;
+    color: #000;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.card1-3 img {
+    width: 219px;
+    height: 100px;
+    margin-bottom: 45px;
+
+    margin-left: 15px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.card1-4 {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    margin-top: 15px;
+}
+
+.card1-4 button {
+    color: #1C88B8;
+    border-color: #1C88B8;
+    width: 100px;
+    height: 32px;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+
+.card1-4 button:hover {
+    background-color: #1C88B8;
+    color: white;
+}
+
+.card1-4 strike {
+    margin-right: 25px;
+    color: #1C88B8;
+    /* font-size: 10px; */
+    margin-left: 10px;
+}
+
+.loadmoreContainer {
+    width: 1450px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.card1-5-open {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+
+}
+
+.card1-5::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaaaaa00;
+}
+
+.card1-5::-webkit-scrollbar-thumb {
+    background: #00000000;
+}
+
+.card1-5 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card1-6 {
+    display: flex;
+    justify-content: end;
+}
+
+.card1-6 button {
+    /* margin-left: 1022px; */
+    margin-bottom: 38px;
+    background-color: #1C88B8;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 45px;
+}
+
+
+
+/* Modal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.modal-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.157);
+}
+
+.m4-second-image {
+    width: 100px;
+    height: 75px;
+    border: 1px solid black;
+}
+
+.m4-second-image {
+    width: 30px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.modal-2 {
+    position: fixed;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 1000px;
+    display: flex;
+    height: 500px;
+}
+
+.m-4-h-1 {
+    font-size: 20px;
+
+}
+
+.modal-4 h4 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.modal-4 {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 17px;
+}
+
+.open-wen-cem {
+    /* display: flex;
+    justify-content: end;
+    align-items: end; */
+}
+
+.open-wen-cem button {
+    width: 50px;
+    height: 25px;
+    background-color: rgba(0, 0, 139, 0.643);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 450px;
+    position: absolute;
+}
+
+.modal-4 span {
+    /* color: #1C88B8; */
+    margin: 20px;
+}
+
+.m-4-btn-1 {
+    width: 150px;
+    height: 45px;
+    background-color: rgba(8, 8, 129, 0.846);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+
+.modal-4-btn-2-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.m-4-btn-2 {
+    width: 150px;
+    height: 45px;
+    background-color: rgba(188, 9, 9, 0.855);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.m-4-quanty span {
+    color: black;
+}
+
+.m-4-totalprice {
+    font-weight: 800;
+    color: black;
+}
+
+.m-4-quanty button {
+    width: 85px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.modal-4 h2 {
+    margin: 20px;
+}
+
+.modal4-p-span {
+    color: rgb(243, 122, 8);
+}
+
+.modal-4 strike {
+    margin: 20px;
+}
+
+.modal-3 img {
+    width: 450px;
+    height: 400px;
+    object-fit: contain;
+}
+
+/* .modal-4 button {
+    width: 350px;
+    height: 55px;
+    color: white;
+    background-color: #1C88B8;
+    border-color: #1C88B8;
+    font-size: 20px;
+} */
+.modal-cros-20 {
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    color: red;
+}
+
+/* .modal-cros-20{
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+} */
+
+/* .btn-1 {
+    color: white;
+} */
+
+.modal-strike {
+    font-size: 15px;
+    color: gray;
+}
+
+/* .modal-btn-2 {
+    width: 350px;
+    height: 55px;
+    background-color: #1C88B8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.modal-btn-2 button {
+    width: 50px;
+    height: 55px;
+    outline: 0;
+    border: none;
+}
+
+.modal-btn-2 span {
+    color: white;
+}
+
+/* Responsive styles for phone screens */
+@media (max-width: 480px) {
+    .modal-2 {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .modal-3 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-4 button,
+    .modal-btn-2 {
+        width: 100%;
+    }
+
+    .modal-4 h2,
+    .modal-4 p,
+    .modal-4 span,
+    .modal-strike {
+        font-size: 16px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-2 {
+        width: 90%;
+        height: 104vh;
+        flex-direction: column;
+        padding: 20px;
+        /* overflow-y: auto; Enable scrolling if content exceeds the height */
+    }
+
+    .modal-3 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-4 button,
+    .modal-btn-2 {
+        width: 100%;
+    }
+
+    .modal-4 h2,
+    .modal-4 p,
+    .modal-4 span,
+    .modal-strike {
+        font-size: 16px;
+        margin: 10px;
+    }
+}
+
+
+/* Carosal1 */
+.carosal-10 {
+    z-index: -1000;
+}
+
+
+
+/* Carosal2 */
+.carousel-container {
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    /* To avoid overflow issues */
+    margin-top: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    /* Allow auto height */
+    width: 100%;
+    max-width: 150px;
+    /* Constrain max width */
+    aspect-ratio: 1/1;
+    /* Make sure card is a perfect circle */
+    border-radius: 50%;
+    border: none;
+    margin: 0 auto;
+    /* Center cards */
+}
+
+.slick-slide {
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 175px;
+    /* Keep max width for large screens */
+    height: auto;
+    /* Allow height to adjust automatically */
+}
+
+.carosal2-h2 {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 1.5rem;
+    /* Use responsive font size */
+}
+
+.car-2-hr {
+    width: 100vw;
+    height: 1px;
+    background-color: black;
+}
+
+.car-one-img {
+    width: 100vw;
+    height: auto;
+    /* Allow height to adjust automatically */
+    max-height: 350px;
+    /* Constrain the height for larger screens */
+}
+
+.car-four-image {
+    display: flex;
+    margin-top: 50px;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap;  */
+}
+
+.underLine {
+    border-top: 1px solid #d6d6d6;
+    margin-top: 50px;
+}
+
+.car-four-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 25px;
+
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (portrait orientation) */
+@media (max-width: 768px) {
+    .card {
+        max-width: 120px;
+        /* Smaller cards for tablets */
+    }
+
+    .car-one-img {
+        max-height: 250px;
+        /* Adjust the height of the main image */
+    }
+
+    .car-four-image img {
+        max-width: 250px;
+        /* Smaller images for tablet view */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .carousel-container {
+        margin-top: 20px;
+        /* Reduce top margin for smaller screens */
+    }
+
+    .card {
+        max-width: 100px;
+        /* Further reduce card size for mobile */
+    }
+
+    .car-one-img {
+        max-height: 200px;
+        /* Reduce image height */
+    }
+
+    .car-four-image img {
+        max-width: 150px;
+        /* Smaller images on mobile */
+        margin: 20px 5px;
+        /* Reduce margin for images */
+    }
+}
+
+
+
+
+/* Carosal4 */
+.carosal4-img {
+    width: 100vw;
+    /* Keep full width */
+    height: auto;
+    /* Let height adjust based on the image aspect ratio */
+    max-height: 400px;
+    /* Maintain max-height for larger screens */
+    object-fit: cover;
+    /* Ensure the image covers the space while maintaining aspect ratio */
+}
+
+.carosal4-1 {
+    margin-top: 50px;
+    padding: 0 20px;
+    /* Add padding for better spacing on smaller screens */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (portrait orientation) */
+@media (max-width: 768px) {
+    .carosal4-img {
+        max-height: 300px;
+        /* Adjust image height for tablets */
+    }
+
+    .carosal4-1 {
+        margin-top: 40px;
+        /* Reduce top margin on smaller screens */
+        padding: 0 15px;
+        /* Adjust padding */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .carosal4-img {
+        max-height: 200px;
+        /* Further reduce image height for mobile */
+    }
+
+    .carosal4-1 {
+        margin-top: 30px;
+        /* Reduce top margin further for mobile */
+        padding: 0 10px;
+        /* Reduce padding for smaller screens */
+    }
+}
+
+
+
+/* Contect */
+/* General form styling */
+.form-11 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 65px;
+}
+
+.form-1 {
+    height: 700px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-2 {
+    /* margin-top: 10px; */
+    /* margin-left: 20px; */
+}
+
+.form-1 p {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.form-1 h6 {
+    padding-left: 20px;
+}
+
+.contact-form {
+    max-width: 750px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Flexbox row for Name and Email */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    /* Spacing between fields */
+}
+
+.form-row .form-group {
+    flex: 1;
+    /* Ensure each field takes up equal space */
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Textarea specific styling */
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Button styling */
+.submit-btn {
+    width: 200px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .form-11 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 65px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+
+    /* Stack the form row items vertically on small screens */
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+
+
+/* flesh  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.flash-1 {
+    width: 100vw;
+    height: 300px;
+    background-color: rgba(125, 115, 115, 0.215);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flash-1 h2 {
+    font-weight: 800;
+    font-size: 2rem; /* Adjust for different screens */
+    
+}
+
+.flash-1 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem; /* Adjust for responsiveness */
+    text-align: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.flash-2 {
+    width: 100%; /* Make it 100% width on smaller screens */
+    max-width: 400px;
+    background-color: rgba(128, 128, 128, 0);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.flash-4 {
+    display: flex;
+    gap: 5px;
+    margin-top: 100px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.flash-2 img {
+    width: 400px; /* Adjust to full width */
+    height:300px; /* Let the height scale with the width */
+}
+
+.flash-2 h6 {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.flash-3 {
+    display: flex;
+    justify-content: start;
+}
+
+.flash-3 p {
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 0.8rem;
+}
+
+
+
+/* CUSTOM CSS START FROM HERE */
+.flashCard{
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 15px;
+    width: 350px;
+}
+.flashCardImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.flashCardImg{
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+}
+.flashCardHead{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+.flashCardTitle{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.flashSubTitle span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.flashSubTitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+/* CUSTOM CSS END FROM HERE */
+
+
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .flash-1 {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+    .flash-1 h2 {
+        font-size: 1.5rem;
+    }
+    .flash-1 span {
+        font-size: 1rem;
+    }
+    .flash-2 {
+        width: 100%; /* Full width on tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flash-1 {
+        height: 200px; /* Further reduce the height on small screens */
+    }
+    .flash-1 h2 {
+        font-size: 1.2rem;
+    }
+    .flash-1 span {
+        font-size: 0.9rem;
+    }
+    .flash-2 {
+        width: 100%; /* Full width on mobile */
+        max-width: 100%;
+    }
+    .flash-4 {
+        margin-top: 50px; /* Adjust spacing */
+        gap: 3px;
+    }
+    .flash-2 img {
+        width: 100%; /* Make images responsive */
+    }
+}
+
+
+
+
+/* Footr */
+/* Basic Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 10px;
+  }
+  .footer2-logo{
+    margin-left: 135px;
+    /* margin-bottom: 20px; */
+  }
+  .footer-container {
+    max-width: 1200px; /* Set a max-width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some padding on the sides */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    justify-content: space-between; /* Space between sections */
+  }
+  
+  /* .footer-logo {
+    flex: 1 1 200px; 
+    margin: -14px;
+  } */
+  
+  .footer-logo h2 {
+    font-size: 2rem; /* Adjust size for the logo */
+    margin-bottom: 20px; /* Spacing below the logo */
+    color: white;
+  }
+  
+  .footer-links {
+    display: flex; /* Use flexbox for links */
+    /* flex-wrap: wrap; */
+    justify-content: space-between; /* Space between link sections */
+    flex: 3; /* Take more space compared to logo */
+    margin: 10px; /* Space around links */
+  }
+  
+  .footer-1 {
+    flex: 1 1 200px; /* Each link section takes equal space */
+    margin: 10px; /* Space between sections */
+  }
+  
+  .footer-1 a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* No underline */
+    font-size: 18px;
+    margin-bottom: 10px; /* Space below links */
+    display: block; /* Make links block-level for spacing */
+    font-weight: 700;
+  }
+  
+  .footer-1 span {
+    display: block; /* Each span on a new line */
+    font-size: 12px; /* Smaller font size for span elements */
+    margin-top: 5px; /* Space above spans */
+    color: white;
+    font-weight: 700;
+  }
+  
+  /* Subscribe Section */
+  .footer-2 {
+    margin-top: 10px; /* Space above subscribe instructions */
+    font-size: 14px; /* Font size for instructions */
+  }
+  
+  .footer2-3 {
+    display: inline-block; /* Position the send icon inline */
+    margin-left: 5px; /* Space between input and icon */
+    cursor: pointer; /* Cursor style for the icon */
+  }
+  
+  .footer-4 {
+    display: flex; /* Flexbox for input and icon */
+    align-items: center; /* Center vertically */
+  }
+  
+  .footer-4 input {
+    padding: 10px; /* Padding for input */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space above input */
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Padding above and below */
+    border-top: 1px solid #444; /* Top border */
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack sections on small screens */
+      align-items: center; /* Center align */
+    }
+  
+    .footer-links {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .footer-1 {
+      text-align: center; /* Center text */
+      margin: -28px 0;
+    }
+  
+    .footer-4 input {
+      width: 80%; /* Full width for input on small screens */
+      margin: 10px 0; /* Margin above and below */
+    }
+  
+    .footer-bottom {
+      font-size: 12px; /* Smaller text size for bottom */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-logo h2 {
+      font-size: 1.5rem; /* Smaller logo size */
+    }
+  
+    .footer-1 a {
+      font-size: 14px; /* Smaller link size */
+    }
+  
+    .footer-2 {
+      font-size: 12px; /* Smaller instruction text */
+    }
+  }
+
+
+  /* Input box */
+  .input-1 {
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.186);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../src/Image/Banner.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 20px; /* Add padding for better spacing */
+}
+
+.input-1 h1 {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 45px; /* Use responsive font size */
+    text-align: center;
+}
+
+.input-1 p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.input-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    gap: 5px;
+}
+
+.input-3 input {
+    width: 80%; /* Use percentage to make the input responsive */
+    max-width: 500px; /* Ensure the input doesn't get too large */
+    height: 55px;
+    outline: none;
+    border: 1px solid white; /* Use consistent border styles */
+    background-color: white;
+    color: black;
+    border-radius: 5px 0 0 5px;
+    padding-left: 20px;
+    margin-bottom: 20px; /* Add spacing below input */
+}
+
+.input-3 button {
+    width: 60%; /* Make button responsive */
+    max-width: 200px; /* Limit button size on larger screens */
+    height: 55px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #1C88B8;
+    color: white;
+    border: none; /* Remove border to make the design cleaner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (portrait orientation) */
+@media (max-width: 768px) {
+    .input-1 h1 {
+        font-size: 6vw; /* Larger font size for tablets */
+    }
+
+    .input-1 p {
+        font-size: 3vw; /* Adjust paragraph size for tablets */
+    }
+
+    .input-3 input {
+        width: 90%; /* Increase input width for tablets */
+    }
+
+    .input-3 button {
+        width: 70%; /* Increase button width for tablets */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .input-1 {
+        padding: 15px; /* Reduce padding for smaller screens */
+      height: 300px;
+    }
+
+    .input-1 h1 {
+        font-size: 8vw; /* Larger font size for mobile */
+    }
+
+    .input-1 p {
+        font-size: 4vw; /* Adjust paragraph size for mobile */
+    }
+
+    .input-3 input {
+        width: 95%; /* Almost full width on mobile */
+    }
+
+    .input-3 button {
+        width: 80%; /* Wider button for mobile */
+    }
+}
+
+
+
+/* Login */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.155);
+    position: fixed;
+}
+
+.login-2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.995);
+    position: fixed;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Ensure inputs and buttons are responsive */
+.login-inp,
+.login-btn-6, .login-with-google {
+    width: 100%;
+    max-width: 400px;
+    height: 45px;
+}
+
+.login-btn-6 {
+    background-color: #1C88B8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.login-with-google{
+    background-color: rgb(34, 34, 167);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-8 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-10,
+.login-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #1C88B8;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-8 span {
+    color: #1C88B8;
+    /* font-size: 12.5px; */
+}
+
+label {
+    font-weight: 1000;
+}
+
+.login-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .login-2 {
+        width: 90%;
+        max-width: 90%;
+    }
+    
+    .login-inp,
+    .login-btn-6 {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
+
+/* Modal2 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.modal2-1 {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.11);
+    z-index: 10000;
+}
+
+.modal2-2 {
+    right: 0; /* Align to the right */
+    top: 0;
+    height: 100%;
+   overflow: auto;
+    width: 30%;
+    background-color: white;
+    z-index: 15000;
+    position: fixed;
+}
+
+.modal2-3 {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 5px rgb(231, 224, 224);
+}
+
+.modal2-4 {
+    color: #1C88B8;
+    font-size: 1.25rem; /* Responsive font size */
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.modal2-cart {
+    color: #1C88B8;
+    font-size: 2.2rem; /* Responsive font size */
+    font-weight: 800;
+}
+
+.modal2-5 {
+    margin-left: 15px;
+}
+
+.modal2-6 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #1C88B8;
+    color: white;
+    margin-left: 10%; /* Use percentage for responsiveness */
+    text-align: center;
+}
+
+.modal2-7 {
+    font-size: 0.9375rem; /* Responsive font size */
+    cursor: pointer;
+    color: white;
+}
+
+.modal2-9 {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* gap: 40; */
+    margin-left: 15px;
+}
+.modal2-cart-data{
+    display: flex;
+    justify-content: space-between;
+}
+.modal2-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 95px;
+    background-color: rgba(128, 128, 128, 0.148);
+    border-radius: 30px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.modal2-8 button {
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.modal2-8 span {
+    width: 20px;
+    height: 20px;
+}
+
+.modal2-10 {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.modal2-10 img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.modal2-11 {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.modal2-11 h6 {
+    font-weight: 700;
+}
+
+.modal2-11 span {
+    font-size: 0.875rem; /* Responsive font size */
+    color: #1C88B8;
+    font-weight: 800;
+}
+
+.modal2-11 p {
+    font-size: 0.9375rem; /* Responsive font size */
+    color: gray;
+}
+
+.modal2-12 p {
+    color: #1C88B8;
+    font-weight: 700;
+    margin-right: 5px;
+    font-size: 1.5625rem; /* Responsive font size */
+    cursor: pointer;
+}
+
+.modal2-12 p:hover {
+    color: red;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .modal2-2 {
+        right: 0; /* Ensure modal remains on the right */
+        width: 30%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .modal2-2 {
+        right: 0; /* Ensure modal remains on the right */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .modal2-6 {
+        margin-left: 15px; /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .modal2-4 {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .modal2-cart {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+}
+
+
+
+
+/* Navbar */
+/* Base Styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav img {
+    width: 125px;
+    cursor: pointer;
+}
+
+.navMenuContainerList {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 18.5px;
+    cursor: pointer;
+}
+
+.NavMenuList {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.NavMenuList li {
+    cursor: pointer;
+    position: relative;
+}
+
+.hoverList:hover .hoverComponent {
+    display: block;
+}
+
+.hoverComponent {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.nav-ques, .nav-span, .nav-btn, .nav-cart {
+    margin-left: 10px;
+}
+
+.nav-cart {
+    position: relative;
+    font-size: 25px;
+    color: #1C88B8;
+    cursor: pointer;
+}
+
+.nav-btn {
+    width: auto;
+    background-color: #1C88B8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 85px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.nav-serch {
+    width: 30px;
+    height: 30px;
+    border: 0.8px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-ques {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.notifaction {
+    position: absolute;
+    top: 9px;
+    right: 4px;
+    background-color: #1C88B8;
+    border-radius: 50%;
+    color: white;
+    padding: 2px 7px;
+}
+
+
+
+
+
+/* home */
+.nav-res{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+    position: relative;
+}
+.nav-res-1 span{
+    font-size: 25px;
+    color: #1C88B8;
+    cursor: pointer;
+}
+.nav-res-4 span{
+color: #1C88B8;
+font-size: 25px;
+cursor: pointer;
+
+}
+.nav-res-2 span{
+    color: #1C88B8;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.nav-res-3 span{
+    color: #1C88B8;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.nav-res-6{
+    width: 28px;
+    height: 28px;
+    background-color: #1C88B8;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18px;
+    margin-top: 2px;
+    position: absolute;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .nav-res{
+        width: 100%;
+        height: 7%;
+        background-color: rgba(230, 230, 239, 0.642);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10000000;    
+    }
+    .nav-serch{
+        display: none;
+    }
+    .nav-btn{
+        display:none;
+    }
+    .nav-cart {
+        display: none;
+    }
+    
+.nav-ques {
+    display: none;
+}
+.notifaction{
+    display: none;
+}
+.navMenuContainerList {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+}
+
+
+/* Style for the sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: white;
+   color: black;
+    padding: 20px;
+    z-index: 1000;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sidebar-close {
+    cursor: pointer;
+    font-size: 24px;
+    color: black;  
+}
+
+/* Sidebar toggle button */
+.nav-sidebar-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    margin-right: 15px;
+}
+
+/* Make sidebar and toggle visible on smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-sidebar-toggle {
+        display: block;
+    }
+    
+    .nav-img {
+        margin-left: auto;
+    }
+
+    .navMenuContainerList {
+        display: none;
+    }
+}
+
+/* Hide the sidebar on larger screens */
+@media screen and (min-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* offer */
+.offer-2 button{
+    width: 45px;
+    height: 45px;
+    background-color: rgb(7, 39, 71);
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+}
+.offer-2 h5{
+    font-size: 25px;
+    font-weight: 700;
+}
+.offer-2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+.offer{
+    margin-bottom: 100px;
+}
+.offer-h4{
+    margin-top: 25px;
+}
+.offer-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Profile */
+/* Container */
+.prof-1 {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Sidebar */
+  .prof-2 {
+    width: 220px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .prof-2 h3 {
+    margin: 0 0 20px;
+    font-size: 1.2em;
+    color: #ffcc00;
+  }
+  
+  .prof-3 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .prof-3 li {
+    padding: 10px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    color: #ccc;
+    transition: background 0.3s;
+  }
+  
+  .prof-3 li:hover,
+  .prof-3 .active {
+    background-color: #555;
+    color: #ffcc00;
+  }
+  
+  /* Content */
+  .prof-4 {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .prof-5 h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form */
+  .prof-6 {
+    margin-bottom: 15px;
+  }
+  
+  .prof-6 label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .prof-6 input,
+  .prof-6 textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .prof-6 textarea {
+    resize: vertical;
+  }
+  
+  /* Submit Button */
+  .prof-7 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffcc00;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .prof-7:hover {
+    background-color: #ffcc00;
+    color: #333;
+  }
+
+
+  /* Registration */
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+.login-1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.155);
+    position: fixed;
+}
+
+.login-2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Ensure inputs and buttons are responsive */
+.login-inp,
+.login-btn-6 {
+    width: 100%;
+    max-width: 400px;
+    height: 45px;
+}
+
+.login-btn-6 {
+    background-color: #1C88B8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-8 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-10,
+.login-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #1C88B8;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-8 span {
+    color: #1C88B8;
+    /* font-size: 12.5px; */
+}
+
+label {
+    font-weight: 1000;
+}
+
+.login-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .login-2 {
+        width: 90%;
+        max-width: 90%;
+    }
+    
+    .login-inp,
+    .login-btn-6 {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* Registration */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.155);
+    position: fixed;
+}
+
+.login-2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Ensure inputs and buttons are responsive */
+.login-inp,
+.login-btn-6 {
+    width: 100%;
+    max-width: 400px;
+    height: 45px;
+}
+
+.login-btn-6 {
+    background-color: #1C88B8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-8 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-10,
+.login-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #1C88B8;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-8 span {
+    color: #1C88B8;
+    /* font-size: 12.5px; */
+}
+
+label {
+    font-weight: 1000;
+}
+
+.login-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .login-2 {
+        width: 90%;
+        max-width: 90%;
+    }
+    
+    .login-inp,
+    .login-btn-6 {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* Swiper */
+.carousel-container {
+  width: 100vw;
+  margin: 0;
+  overflow: hidden; /* To avoid overflow issues */
+  margin-top: 100px;
+  
+}
+.swiper-11{
+  z-index: -1;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  height: auto; /* Allow height to adjust based on content */
+  width: 100%;
+  max-width: 150px; /* Limit max width */
+  aspect-ratio: 1/1; /* Ensure circular aspect ratio */
+  border-radius: 50%;
+  border: none;
+  margin: 0 auto; /* Center cards */
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.card img {
+  width: 150%;
+  max-width: 200px; /* Restrict max width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.carosal2-h2 {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 2vw; /* Responsive font size */
+}
+
+.car-2-hr {
+  width: 100vw;
+  height: 0.5px;
+  background-color: black;
+}
+
+.car-one-img {
+  width: 100vw;
+  height: auto; /* Allow height to adjust based on image */
+  max-height: 350px; /* Limit max height */
+}
+
+.car-four-image {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+
+.car-four-image img {
+  width: 100%;
+  max-width: 300px; 
+  height: auto;
+  border-radius: 25px;
+  margin-top: 45px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (portrait orientation) */
+@media (max-width: 768px) {
+  .card {
+      max-width: 120px; /* Smaller cards for tablets */
+  }
+
+  .card img {
+    width: 200%;
+    max-width: 165px; /* Restrict max width of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .carosal2-h2 {
+      font-size: 3vw; /* Larger font size for tablets */
+  }
+
+  .car-one-img {
+      max-height: 300px; /* Adjust height for tablet view */
+  }
+
+  .car-four-image img {
+      max-width: 250px; /* Smaller images for tablet view */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .carousel-container {
+      margin-top: 50px; /* Reduce margin for smaller screens */
+  }
+
+  .card {
+      max-width: 100px; /* Smaller card size for mobile */
+  }
+
+  .card img {
+    width: 150%;
+    max-width: 165px; /* Restrict max width of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .carosal2-h2 {
+      font-size: 4vw; /* Increase font size for mobile */
+  }
+
+  .car-one-img {
+      max-height: 200px; /* Reduce image height for mobile */
+  }
+
+  .car-four-image {
+      justify-content: center; /* Center images on mobile */
+      gap: 5px; /* Reduce gap for smaller screens */
+  }
+
+  .car-four-image img {
+      max-width: 150px; /* Smaller image size for mobile */
+      margin-top: 20px;
+  }
+}
+.unserLine{
+  border-top: .5px #e4e4e4 solid;
+
+}
+
+
+
+
+/* Swiper2 */
+/* General styles for the container */
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Card styles */
+  .swiper2-1 {
+      /* display: flex;
+  justify-content: center;
+      align-items: center; */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .swiper2-1:hover {
+    transform: translateY(-10px);
+  }
+  
+  .swiper2-img {
+  
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Button styles */
+  .swiper2-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    /* min-width: 200px; */
+    /* border-radius: 5px; */
+    cursor: pointer;
+    font-size: 1rem;
+    /* width: 200px; */
+    border-radius: 10px;
+  }
+  
+  .swiper2-btn:hover {
+    background-color: #133818e4;
+  }
+  
+  /* Container for the button */
+  .cardBtnDiv {
+    margin-top: 10px;
+  }
+  
+  /* Title and price styling */
+  h5 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  span {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* Media queries for responsive design */
+  
+  /* Large screens */
+  @media only screen and (min-width: 1200px) {
+    .swiper2-1 {
+      width: 20%;
+    }
+  }
+  
+  /* Medium screens */
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .swiper2-1 {
+      width: 33.33%;
+    }
+  }
+  
+  /* Small screens */
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .swiper2-1 {
+      width: 50%;
+    }
+  
+    .swiper2-btn {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Extra small screens */
+  @media only screen and (max-width: 575px) {
+    .swiper2-1 {
+      width: 100%;
+    }
+  
+    h5 {
+      font-size: 1rem;
+    }
+  
+    span {
+      font-size: 0.9rem;
+    }
+  
+    .swiper2-btn {
+      font-size: 0.85rem;
+      padding: 8px 15px;
+    }
+  }
+  
+
+
+
+  /* Swiper3 */
+  .carousel-container {
+    width: 100vw;
+    margin: 0;
+    overflow: hidden; /* To avoid overflow issues */
+    margin-top: 45px;
+    margin-top: 100px;
+  }
+  
+  .card {
+    background: #fff;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
+    padding: 20px;
+    text-align: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: none;
+  }
+  
+  .slick-slide {
+    padding: 10px;
+  }
+  .card img{
+    width: 165px;
+    height: 165px;
+    /* border-radius: 50%; */
+  }
+  .carosal2-h2{
+    text-align: center;
+    margin-top: 45px;
+  }
+  .car-2-hr{
+    width: 100vw;
+    height: 0.5px;
+    background-color: black;
+  }
+  .car-one-img{
+    width: 100vw;
+    height: 350px;
+  }
+  .car-four-image{
+    display: flex;
+    justify-content: space-between;
+  }
+  .car-four-image img{
+    width: 325px;
+    height: 500px;
+    border-radius: 25px;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+
+
+  
+
+

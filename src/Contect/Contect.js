@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Contect.css';  // Import the CSS file
 import contact from "../Image/contact.png";
+import "../App.css";
 import "../Responsive.css"
 
 

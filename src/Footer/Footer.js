@@ -1,18 +1,16 @@
 import React from 'react';
-import './Footer.css';
-// import "./Footer.css";
 import logo from "../Image/logo.webp"
+import "../App.css"
 import { IoMdSend } from "react-icons/io";
+import newlogo from "../Image/logo.webp";
 
 const Footer = () => {
   return (
     <footer className="footer">
+
+      <div className='footer2-logo'><img src={newlogo}></img></div>
       <div className="footer-container">
         <div className="footer-content">
-          <div className="footer-logo">
-          <h2>EyeCare
-          </h2>
-          </div>
           <div className="footer-links">
             <div className='footer-1'>
             <a  href="#home">Explore</a>
@@ -42,16 +40,10 @@ const Footer = () => {
             <span className='footer-2'>Subscribe your email for  based on your</span>
             <span>newsletter and featured news</span>
             <span className='footer-4'>
-                <input placeholder='wright email' type='text'></input><div className='footer-3'><IoMdSend /></div>
+                <input placeholder='wright email' type='text'></input><div className='footer2-3'><IoMdSend /></div>
             </span>
             </div>
           </div>
-        </div>
-        <div className="footer-bottom">
-          <p>&copy; 2024 Your Company. All rights reserved.</p>
-          <p>
-            Designed by <a href="https://yourdesign.com">YourDesign</a>
-          </p>
         </div>
       </div>
     </footer>

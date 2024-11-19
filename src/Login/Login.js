@@ -1,4 +1,4 @@
-import "./Login.css";
+import "../App.css"
 import logo from "../Image/logo.webp";
 import { useState } from "react";
 import {  useNavigate } from "react-router-dom";

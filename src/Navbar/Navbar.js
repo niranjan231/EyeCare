@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "../App.css"
 import { IoBagAdd, IoHome } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { FaCartPlus, FaQuestionCircle, FaUser, FaBars } from "react-icons/fa";

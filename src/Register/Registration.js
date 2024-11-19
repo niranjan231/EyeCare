@@ -1,4 +1,4 @@
-import "./Registration.css";
+import "../App.css";
 import logo from "../Image/logo.webp";
 import { useState } from "react";
 import { Route, useNavigate } from "react-router-dom";
