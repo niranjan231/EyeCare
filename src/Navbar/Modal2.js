@@ -46,11 +46,11 @@ const Modal2 = ({ handleCartModalClose }) => {
                                 <button onClick={handleIncresCountModal2}>+</button>
                             </div>
                             <div className="modal2-10">
-                                <img src={data2.image}></img>
+                                <img src={`https://eye-care.developmentalphawizz.com/storage/app/public/product/thumbnail/${data2.thumbnail}`}></img>
                             </div>
                             <div className="modal2-11">
-                                <h6>Sunglasses - MG3631</h6>
-                                <span>RS:0.68</span>
+                                <h6>{data2.name}</h6>
+                                <span>RS:{data2.unit_price}</span>
                                 <p>7*11MB</p>
                             </div>
                             <div className="modal2-12">

@@ -16,7 +16,6 @@ import Navbar from './Navbar/Navbar';
 import { useEffect, useState } from 'react';
 import Contect from './Contect/Contect';
 import FlashSale from './FlashSale/FlashSale';
-import Demo from './Demo';
 import Offer from './Offer/Offer';
 import Footer from './Footer/Footer';
 import Profile from './Profile/Profile';

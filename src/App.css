@@ -2307,7 +2307,7 @@ label {
   }
   .card img{
     width: 165px;
-    height: 165px;
+    /* height: 165px; */
     /* border-radius: 50%; */
   }
   .carosal2-h2{

@@ -44,16 +44,24 @@ const Modal = ({ handleBackModal, mdetales }) => {
             <div onClick={handleBackModal} className="modal-1"></div>
             <div className="modal-2">
                 <div  className="modal-cros-20"><RxCross2 /></div>
-                <div className="modal-3">
-                    <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-&-computer-glasses:-black-full-rim-rectangle-lenskart-blu-lb-e14255-c3_g_2060_6_16_22.jpg" alt=""></img>
+             
+                {
+                  mdetales.map((productDetales)=>{
+                    return <>
+                     <div className="modal-3">
+                     <img
+                    src={`https://eye-care.developmentalphawizz.com/storage/app/public/product/thumbnail/${productDetales.thumbnail}`}
+                    alt=""
+                    className="product-image"
+                  />
                 </div>
                 <div className="modal-4">
                     <h2>Gradient Grey Wayfarer Sunglasses - MG3631</h2>
                 <p className="modal4-p-span" style={{fontSize:"20px"}}><FaStar /><FaStar /><FaStar /><FaRegStarHalfStroke /><CiStar />
-                        <span style={{color:"black",fontSize:"17px"}}>4.6 Review</span>|<span style={{color:"black",fontSize:"17px"}}>0 order</span>|<span style={{color:"black",fontSize:"17px"}}>0 WishList</span>
+                        <span style={{color:"black",fontSize:"17px"}}>{productDetales.reviews} Review</span>|<span style={{color:"black",fontSize:"17px"}}>0 order</span>|<span style={{color:"black",fontSize:"17px"}}>0 WishList</span>
                     </p>
                     <span className="m4-span-strike">33.30 RS <strike style={{ color: "red" }}>45 Rs</strike></span>
-                    <h4><span>Discount Price:2.0Rs</span> <strike className="modal-strike">Rs:5.00</strike></h4>
+                    <h4><span>Discount Price:{productDetales.discount}</span> <strike className="modal-strike">Rs:5.00</strike></h4>
                     <div className="m-4-quanty">
                         <span>Quantity:</span>
                         <button onClick={handleDecresscard}  style={{cursor:"pointer",fontSize:"25px",border:"none",backgroundColor:"white"}} >-</button>
@@ -69,6 +77,11 @@ const Modal = ({ handleBackModal, mdetales }) => {
                       <span style={{color:"red"}}>0</span>
                     </div>
                 </div>
+                    </>
+                  })
+                }
+               
+               
             </div>
         </>
     )

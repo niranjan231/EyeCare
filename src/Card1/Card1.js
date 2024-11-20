@@ -4,36 +4,42 @@ import { FaShoppingCart } from "react-icons/fa";
 import Modal from "./Modal"
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useSelector, useDispatch } from 'react-redux';
-import { handleAddToCart } from '../features/cartSlice';
+import { handleAddToCart, product } from '../features/cartSlice';
 import axios from 'axios';
 // import {GetProduct} from "../Service/GetService"
 import { GetProduct } from '../Service/GetService';
+import { FetchProduct } from '../Api/productApi';
 
 
 
 const Card1 = () => {
+  const dispatch = useDispatch();
+
   const [apiData, setApiData] = useState([])
 
+  dispatch(product(apiData));
 
+  // console.log('my api data',apiData)
 
   useEffect(() => {
-    GetProduct('/api/v1/brands/products/7')
+    FetchProduct()
       .then(res => {
-        console.log(res.data)
+        // console.log(res.data)
+        setApiData(res.data)
+        dispatch(setApiData(res.data))
       })
       .catch(err => {
         console.log(err)
       })
-  }, [])
+  }, [dispatch])
 
 
 
 
 
 
-  const dispatch = useDispatch();
   const getItem = useSelector((state) => state.allCart.items)
-  // console.log(getItem)
+  // console.log("get item",getItem)
 
 
 
@@ -47,32 +53,34 @@ const Card1 = () => {
   const [mdetales, setMdetales] = useState([]);
   // const [show5 , setShow5] = useState(false)
   // add category
-  const [catgy, setCatgy] = useState(getItem)
 
 
-  const UpdateItem = (carditem) => {
-    const filterCatogery = getItem.filter((curdItem) => {
-      return curdItem.category === carditem
-    })
-    setCatgy(filterCatogery)
-  }
+  // const [catgy, setCatgy] = useState(getItem)
+
+
+  // const UpdateItem = (carditem) => {
+  //   const filterCatogery = getItem.filter((curdItem) => {
+  //     return curdItem.category === carditem
+  //   })
+  //   setCatgy(filterCatogery)
+  // }
   const handleSubCat1 = () => {
-    UpdateItem("men")
+    // UpdateItem("men")
   }
   const handleSubCat2 = () => {
-    UpdateItem("women")
+    // UpdateItem("women")
   }
   const handleSubCat3 = () => {
-    UpdateItem("kids")
+    // UpdateItem("kids")
   }
   const handleSubCat4 = () => {
-    UpdateItem("men")
+    // UpdateItem("men")
   }
   const handleSubCat5 = () => {
-    UpdateItem("kids")
+    // UpdateItem("kids")
   }
   const handleSubCat6 = () => {
-    UpdateItem("women")
+    // UpdateItem("women")
   }
 
 
@@ -83,32 +91,32 @@ const Card1 = () => {
 
   const handleOpenDropdown5 = () => {
     setShow4(false)
-    UpdateItem("men")
+    // UpdateItem("men")
   }
   const handleOpenDropdown6 = () => {
     setShow4(true)
-    UpdateItem("kids")
+    // UpdateItem("kids")
 
   }
   const handleOpenDropdown4 = () => {
     setShow3(true)
-    UpdateItem("women")
+    // UpdateItem("women")
 
   }
   const handleOpenDropdown3 = () => {
     setShow3(false)
-    UpdateItem("men")
+    // UpdateItem("men")
 
   }
   const handleOpenDropdown = () => {
     setShow2(false)
-    UpdateItem("kids")
+    // UpdateItem("kids")
 
   }
 
   const handleOpenDropdown2 = () => {
     setShow2(true)
-    UpdateItem("women")
+    // UpdateItem("women")
 
   }
   const handleLoadMoreBtnCard1 = () => {
@@ -172,12 +180,18 @@ const Card1 = () => {
         <div className='loadmoreContainer'>
           <div className='card1-5'>
             {
-              catgy.map((data, id) => {
-                return <div key={data.id} data={data} className='card1-3'>
-                  <img onClick={() => handleModal(data)} src={data.image}></img>
-                  <span>Round Black Silver Sunglass</span>
-                  <div className='card1-4'><strike>RS:232</strike>
-                    <button onClick={() => dispatch(handleAddToCart(data))}><FaShoppingCart /></button>
+              getItem.map((lensData, id) => {
+                // console.log(id)
+                return   <div key={id} data={lensData} className='card1-3'>
+                  {/* <img onClick={() => handleModal(data3)} src={}></img> */}
+                  <img onClick={() => handleModal(lensData)}
+                    src={`https://eye-care.developmentalphawizz.com/storage/app/public/product/thumbnail/${lensData.thumbnail}`}
+                    alt=""
+                    className="product-image"
+                  />
+                  <span>{lensData.name}</span>
+                  <div className='card1-4'><span>RS:{lensData.unit_price}</span>
+                    <button onClick={() => dispatch(handleAddToCart(lensData))}><FaShoppingCart /></button>
                     {/* <button><button className='card-add-1'>+</button><span>1</span><button className='card-add-2'>-</button></button> */}
                   </div>
                 </div>
@@ -188,11 +202,17 @@ const Card1 = () => {
           {
             show && <div className='card1-5'>
               {
-                getItem.map((data) => {
-                  return <div key={data.id} className='card1-3'>
-                    <img onClick={() => handleModal(data)} src={data.image}></img>
-                    <span>Round Black Silver Sunglass</span>
-                    <div className='card1-4'><strike>RS:232</strike><button><FaShoppingCart /></button></div>
+                getItem.map((lensData1,id) => {
+                  return <div key={lensData1.id} className='card1-3'>
+                    <img onClick={() => handleModal(lensData1)}
+                    src={`https://eye-care.developmentalphawizz.com/storage/app/public/product/thumbnail/${lensData1.thumbnail}`}
+                    alt=""
+                    className="product-image"
+                  />
+                    <span>{lensData1.name}</span>
+                    <div className='card1-4'><span>RS:{lensData1.unit_price}</span>
+                    <button onClick={() => dispatch(handleAddToCart(lensData1))}><FaShoppingCart /></button>
+                    </div>
                   </div>
                 })
               }
