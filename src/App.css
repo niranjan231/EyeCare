@@ -2351,7 +2351,34 @@ label {
     border-radius: 5%;
   }
 
-
-  
+  .catgy1-1{
+    display: flex;
+    margin: 30px 0px;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.catgy1-2{
+    display: flex;
+    width: 220px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 5%;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+.catgy1-2 button{
+    background-color: #1C88B8;
+    color: white;
+    border-radius: 5px;
+    width: 75%;
+    padding: 5px;
+    border: none;
+}
+.catgy1-2 img{
+    width: 180px;
+    height: 180px;
+}
 
 

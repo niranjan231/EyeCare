@@ -28,6 +28,9 @@ const Navbar = (props) => {
   const handleBrandProduct = () => {
     navigate("/brand");
   };
+  const handleCategoryfromNavbar = () => {
+    navigate("/category");
+  };
 
   const handleMobileLogin = () => {
     navigate("login");
@@ -82,7 +85,8 @@ const Navbar = (props) => {
             </div>
           </div>
           <div class="dropdown">
-            <li
+            <li 
+              onClick={handleCategoryfromNavbar}
               class="dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"

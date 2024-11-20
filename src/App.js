@@ -1,16 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-// import Navbar from './Navbar/Navbar';
-import Carosal1 from './Carosal1/Carosal1';
-import Carosal2 from './Carosal2/Carosal2';
-import Swiper1 from './Swiper1/Swiper1';
-import Swiper2 from './Swiper2/Swiper2';
-// import Carosal3 from './Carosal3/Carosal3';
-// import Carosal4 from './Carosal4/Carosal4';
 import Home from './Home';
-import InputBox from "./InputBox/InputBox"
 import MainLogo from './MainLogo';
-// import Cemra from "./Cemra/Cemra"
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 import { useEffect, useState } from 'react';
@@ -24,6 +14,7 @@ import Registration from './Register/Registration';
 import { auth } from './Firebase';
 import Card1 from './Card1/Card1';
 import Brand from './Brand/Brand';
+import Category from './Category/Category';
 function App() {
 
   const [userName, setUserName] = useState("");
@@ -34,7 +25,6 @@ function App() {
       } else {
         setUserName("")
       }
-      // console.log(user);
     })
   }, [])
 
@@ -52,6 +42,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/product' element={<Card1 />}></Route>
         <Route path='/brand' element={<Brand/>}/>
+        <Route path='/category' element={<Category/>}/>
       </Routes>
       <div className='footer-gap'>
         <Footer />
