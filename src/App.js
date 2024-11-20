@@ -23,6 +23,7 @@ import Login from './Login/Login';
 import Registration from './Register/Registration';
 import { auth } from './Firebase';
 import Card1 from './Card1/Card1';
+import Brand from './Brand/Brand';
 function App() {
 
   const [userName, setUserName] = useState("");
@@ -50,6 +51,7 @@ function App() {
         <Route path='/registration' element={<Registration />} />
         <Route path='/login' element={<Login />} />
         <Route path='/product' element={<Card1 />}></Route>
+        <Route path='/brand' element={<Brand/>}/>
       </Routes>
       <div className='footer-gap'>
         <Footer />

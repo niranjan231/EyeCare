@@ -26,6 +26,10 @@ const Navbar = (props) => {
         setSidebarOpen(false); // Close the sidebar after navigating
     };
 
+    const handleBrandProduct=()=>{
+        navigate("/brand")
+    }
+
     const handleMobileLogin = () => {
         navigate("login")
     }
@@ -75,7 +79,7 @@ const Navbar = (props) => {
                         </div>
                     </div>
                     <li>Category</li>
-                    <li>Brand</li>
+                    <li onClick={handleBrandProduct}>Brand</li>
                     <li onClick={handleContect}>Contact</li>
                     <li onClick={handleFlashSale}>Flash Sale</li>
                 </div>
