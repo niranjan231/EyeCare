@@ -2335,7 +2335,21 @@ label {
     margin-left: 10px;
     margin-right: 10px;
   }
-  
+
+
+
+  /* brand images css */
+  .brand-image-container{
+    border: 1px solid gray;
+    border-radius: 5%;
+    width: 220px;
+    height: 220px;
+  }
+
+  .brand-image{
+    width: 220px;
+    border-radius: 5%;
+  }
 
 
   
