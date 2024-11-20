@@ -84,33 +84,7 @@ const Navbar = (props) => {
               <li onClick={handleProductfromNavbar}>Product</li>
             </div>
           </div>
-          <div class="dropdown">
-            <li 
-              onClick={handleCategoryfromNavbar}
-              class="dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Category
-            </li>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#">
-                  Action
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  Another action
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </li>
-            </ul>
-          </div>
+          <li onClick={handleCategoryfromNavbar}>Category</li>
           <li onClick={handleBrandProduct}>Brand</li>
           <li onClick={handleContect}>Contact</li>
           <li onClick={handleFlashSale}>Flash Sale</li>

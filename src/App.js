@@ -15,6 +15,7 @@ import { auth } from './Firebase';
 import Card1 from './Card1/Card1';
 import Brand from './Brand/Brand';
 import Category from './Category/Category';
+import Checkout from './Checkout/Checkout';
 function App() {
 
   const [userName, setUserName] = useState("");
@@ -43,6 +44,7 @@ function App() {
         <Route path='/product' element={<Card1 />}></Route>
         <Route path='/brand' element={<Brand/>}/>
         <Route path='/category' element={<Category/>}/>
+        <Route path='/Checkout' element={<Checkout/>}/>
       </Routes>
       <div className='footer-gap'>
         <Footer />

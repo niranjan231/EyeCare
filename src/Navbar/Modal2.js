@@ -6,6 +6,7 @@ import "../Responsive.css"
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { removeCard } from "../features/cartSlice";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -14,6 +15,7 @@ import { removeCard } from "../features/cartSlice";
 
 
 const Modal2 = ({ handleCartModalClose }) => {
+    const navigate = useNavigate()
     const dispatch = useDispatch()
 
     const {cart, totalQuantaty,totalPrice } = useSelector((state)=>state.allCart)
@@ -22,6 +24,9 @@ const Modal2 = ({ handleCartModalClose }) => {
     const [incresCounter , setIncresCounter] = useState(1)
     const handleIncresCountModal2=()=>{
         setIncresCounter(incresCounter+1);
+    }
+    const handleCheckoutFromModal=()=>{
+        navigate("/checkout")
     }
     return (
         <>
@@ -64,6 +69,10 @@ const Modal2 = ({ handleCartModalClose }) => {
                     }
                 </div>
 
+<div onClick={()=>{handleCheckoutFromModal(); handleCartModalClose()}}  className="mod-c-1">
+    <p onClick={handleCartModalClose}>Checkout</p>
+    <p>Total Price: 7483</p>
+</div>
                 {/* <div className="modal2-9">
                     <div className="modal2-8">
                     <button>-</button>

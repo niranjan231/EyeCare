@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
 import "../App.css";
 import { FetchBrandApi } from "../Api/BrandApi";
+import BrandDetales from "./BrandDetales";
 
 const Brand = () => {
   const [brandData, setBrandData] = useState([]);
+  const [showBrand , setShowBrand] = useState(false)
+  const handleBrandDetales=()=>{
+    setShowBrand(true)
+  }
 
   useEffect(() => {
     FetchBrandApi()
@@ -22,7 +27,7 @@ const Brand = () => {
         {brandData.map((brand, index) => {
           return (
             <div key="index" className="brand-image-container d-grid align-items-center">
-              <img
+              <img onClick={handleBrandDetales}
                 src={`https://eye-care.developmentalphawizz.com/storage/app/public/brand/${brand.image}`}
                 alt="Glasses 1"
                 className="brand-image"
@@ -31,6 +36,9 @@ const Brand = () => {
           );
         })}
       </div>
+      {
+        showBrand && <BrandDetales/>
+      }
     </div>
   );
 };
